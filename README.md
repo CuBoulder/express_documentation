@@ -1,10 +1,10 @@
 # Workflows
-- [Git strategy](git_strategy.md)
+- [Git strategy](docs/git_strategy.md)
 
 # Coding
-- [Patches to FIT](patches.md)
-- [Express Coding Standards](coding_standards.md)
-- [Express Bundles](express_bundles.md)
+- [Patches to FIT](docs/gpatches.md)
+- [Express Coding Standards](docs/gcoding_standards.md)
+- [Express Bundles](docs/gexpress_bundles.md)
 
 # Tests
-- [Behat](behat.md)
+- [Behat](docs/gbehat.md)
