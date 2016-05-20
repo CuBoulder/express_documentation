@@ -124,6 +124,16 @@ The "@api" tag is also a special, reserved tag. It is used in every test in the 
 # Running Tests
 
 To run Behat tests, you must be in the root folder where the "behat.yml" configuration file is located. To run the whole test suite you would just type "behat" into your terminal. If you only wanted to run a particular test suite, you can type "behat --suite=name_of_suite". To run a particular tag you can type "behat --tags @tag_name".
+```
+// whole test suite
+behat
+// single suite tests
+behat --suite=name_of_suite
+// only test certain tags
+behat --tags @tag_name
+```
+
+If you get an error about no Drupal installation existing, then you'll want to change the root location Behat looks to find a Drupal site...
 
 # Debugging Tests
 Occasionally, you'll want more information from the test run for debugging purposes. In that case, you can have Behat post output in a verbose mode "behat --verbose".
