@@ -8,4 +8,4 @@
 - [Managing Express Cores](docs/managing_cores.md)
 
 # Tests
-- [Behat](docs/gbehat.md)
+- [Behat](docs/behat.md)
