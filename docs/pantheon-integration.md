@@ -1,9 +1,16 @@
-## Pantheon
+# Pantheon Profile
 There is a separate version of Express that Pantheon users can pull in to start an Express site.
 
-### Pantheon drop stuff...
+## Pantheon drop stuff...
 
-### Site audit report
+# Using Drush
+You can use drush locally to connect to your Pantheon site. Using drush in this way is very useful for quick debugging when the web interface is not working or is not returning good/enough information. To access your site remotely via drush, you'll have to download your drush aliases file from your account dashboard. Then, you can access drush normally, but you have to follow the pattern below. 
+
+    drush @site-name.dev status --strict=0
+    
+The first part "@site-name.dev" directs drush to perform actions on the dev environemtn of your site. The "--strict=0" option allows you to run commands even when warning messages are generated. In my experience, a command won't execute or return you any feedback if that option is not present.   
+
+# Site Audit Report
 Pantheon has a nice feature where you can check best practices on a site from the Pantheon dashboard. There are several checks that can't be fixed on an Express site. So, Pantheon has some variables excluding these checks that can be placed in settings.php.
 
     $conf['site_audit']['opt_out']['ExtensionsUnrecommended'] = TRUE;
