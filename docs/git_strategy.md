@@ -29,7 +29,7 @@ This is based on Gitflow.
     git push --set-upstream origin feature/[issue-key]
     ```
 
-* Start a Bug
+* [Start a Bug](#bug)
 
     ```bash
     cd [path/to/git/repo]
