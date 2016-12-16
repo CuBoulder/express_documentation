@@ -18,6 +18,6 @@ The following criteria for evaluating services was developed after comparing int
 * Does the service provide access to test and provide feedback about updates before they are released?
 * Does the service provide support?  (At both the developer and end user level?)
 * Can we track the status of support requests?
-* Does the service have an existing Drupal integration that is reports several installs and appears to be well supported?
+* Does the service have an existing Drupal integration that is reporting several installs and appears to be well supported?
 
 Answering no to one of two of these (other than accessiblity and security) wouldn’t mean we’d refuse to integrate the service, but answering no to all or most of these should be a red flag that we could have issues with this service.
