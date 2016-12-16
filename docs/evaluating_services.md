@@ -6,8 +6,10 @@ We now have examples of both good and bad integrations.  Integrating services li
 
 The following criteria for evaluating services was developed after comparing integrations that have gone well with ones that have gone poorly.  
 
+* Is this service accessible?  
+* Is this service secure?
 * Would this service be used by a large number of Web Express sites or high traffic sites?
-* Is the service a good fit with Web Express's direction? 
+* Is the service a good fit with Web Express's direction?
 * Does the service provide accurate documentation?
 * Is the service used by a large number of other sites? (Are we one of the first?)
 * Is there a community where issues with the service are openly discussed?  (Are we seeing feedback from real users or just marketing material?)
@@ -18,4 +20,4 @@ The following criteria for evaluating services was developed after comparing int
 * Can we track the status of support requests?
 * Does the service have an existing Drupal integration that is reports several installs and appears to be well supported?
 
-Answering no to one of two of these wouldn’t mean we’d refuse to integrate the service, but answering no to all or most of these should be a red flag that we could have issues with this service.
+Answering no to one of two of these (other than accessiblity and security) wouldn’t mean we’d refuse to integrate the service, but answering no to all or most of these should be a red flag that we could have issues with this service.
