@@ -1,6 +1,6 @@
 # Coding
-- [Patches to FIT](docs/gpatches.md)
-- [Express Coding Standards](docs/gcoding_standards.md)
+- [Patches to FIT](docs/patches.md)
+- [Express Coding Standards](docs/coding_standards.md)
 - [Express Bundles](docs/express_bundles.md)
 - [Managing Express Cores](docs/managing_cores.md)
 
@@ -12,5 +12,4 @@
 
 # Workflows
 - [Git strategy](docs/git_strategy.md)
-
-
+- [Bug Matrix](docs/update_matrix.md)
