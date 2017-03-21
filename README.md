@@ -13,3 +13,4 @@
 # Workflows
 - [Git strategy](docs/git_strategy.md)
 - [Bug Matrix](docs/update_matrix.md)
+- [Custom Bundle Updates](docs/custom_bundle_releases.md)
