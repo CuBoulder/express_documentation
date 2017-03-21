@@ -22,5 +22,17 @@ Along with the "project status url" key, the "version" and "project" keys are ne
 
 ## How To Succesfully Update A Custom Bundle's Code
 
+1. Finish your sprint and prepare the repository for a release like you normally would. 
+2. Make a tag in the Drupal format for modules, e.g. "7.x-1.1".
+3. Make a release in GitHub using the tag from step two. 
+4. Download the release files, e.g. "module-7.x-1.1.tar.gz".
+5. Run md5 on your downloaded file, e.g. "md5 module-7.x-1.1.tar.gz".
+6. Edit your release notes and add the checksum, e.g. "md5: ceb3af66ab78e65def488a175a54d5d4".
+7. Go to "admin/reports/updates" to check if your custom module reports needing an update. 
+
+## Future Updates
+
+* In the future, the manual steps for adding the checksum to the release page might be automated.
+* Currently, the ERUS module only supports GitHub projects, which is where most Express code is hosted, but additional external repository hosts might be added in the future.
 
 
