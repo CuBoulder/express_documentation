@@ -1,8 +1,8 @@
-#Express Bundles
+# Express Bundles
 
 Module bundles are a key feature of the Express install profile.  It allows additional functional to be added to what is provided in Express Core by a site owner without the requiring the 'administer modules' permission.  Bundles are also used to enforce the state of site.  Profile Module Manager combines the dependencies of the profile, core, and enabled bundles and reports the site as being in a error state if anything else is enabled.
 
-###Bundles should do the following things:
+### Bundles should do the following things:
 
 1. [Define Dependencies](#define-dependencies)
 2. [Declare Requirements of Profile Module Manager Install](#declare-reqirements)
@@ -12,12 +12,12 @@ Module bundles are a key feature of the Express install profile.  It allows addi
 6. [Add Settings Links](#add-setting-links)
 7. Install/breakup express_layout settings variables
 
-###Define Dependencies
+### Define Dependencies
 The Bundle should define both true Drupal enforced dependencies and optional-dependency for Profile Module Manager. These are defined in the Bundles .info file either using the standard Drupal dependencies[] = or the optional-dependencies[] =.  Optional dependencies can be enabled or disabled without triggering an error in Profile Module Manager.
 
 Profile Module Manager does NOT chase the dependencies like the normal Drupal module enable.  All dependencies must be declared in the bundle's .info.
 
-###Declare Requirements
+### Declare Requirements
 See https://github.com/CuBoulder/express/blob/dev/modules/custom/cu_social_media_bundle/cu_social_media_bundle.info
 
 ```
@@ -25,7 +25,7 @@ bundle_cache_clear = 1
 bundle_context_clear = 1
 ```
 
-###Define Permisions
+### Define Permisions
 
 ```
 function cu_social_media_bundle_secure_permissions($role) {
@@ -131,7 +131,7 @@ function cu_social_media_bundle_secure_permissions($role) {
 }
 ```
 
-Define Inline Help
+### Define Inline Help
 ```
 /**
  * Implements hook_express_help()
@@ -174,7 +174,7 @@ function cu_news_bundle_express_help($variables) {
 }
 ```
 
-###Add Settings Links 
+### Add Settings Links 
 to admin/settings Under Bundle Section
 ```
 /**
