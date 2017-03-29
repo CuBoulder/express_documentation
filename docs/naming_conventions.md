@@ -1,6 +1,8 @@
-## What to name a bundle?
+## What to Name a Bundle?
 
 Naming code is often referenced as one of the 2 truly difficult parts of coding ([along with caching invalidation and off by one errors](https://twitter.com/codinghorror/status/506010907021828096)). Naming in Express is no exception. While we haven't always followed this pattern, this is the current recommendation.
+
+To be recognized by Profile Module Manager, a module name must end in _bundle. The bundles prefix should indicate it's intended use.
 
 **express_** Any bundle that is not CU specific, but is being designed to work within Express.
 
