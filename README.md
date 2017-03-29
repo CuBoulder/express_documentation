@@ -3,8 +3,8 @@
 - [Express Coding Standards](docs/coding_standards.md)
 - [Express Bundles](docs/express_bundles.md)
 - [Express Cores](docs/managing_cores.md)
-- [Storge and Structure](docs/storage_stucture.md)
 - [Naming Conventions](docs/naming_conventions.md)
+- [Storge and Structure](docs/storage_stucture.md)
 
 # Integrations
 - [Pantheon](docs/pantheon-integration.md)
