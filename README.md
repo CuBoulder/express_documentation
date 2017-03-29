@@ -6,8 +6,9 @@
 - [Storge and Structure](docs/storage_stucture.md)
 - [Managing Patches for Drupal Core and Contrib](docs/patches.md)
 
-# Integrations
+# Hosting
 - [Pantheon](docs/pantheon-integration.md)
+- Platform
 
 # Tests
 - [Behat](docs/behat.md)
