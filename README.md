@@ -1,8 +1,8 @@
 # Coding
-- [Patches to FIT](docs/patches.md)
+- [Patches](docs/patches.md)
 - [Express Coding Standards](docs/coding_standards.md)
 - [Express Bundles](docs/express_bundles.md)
-- [Managing Express Cores](docs/managing_cores.md)
+- [Express Cores](docs/managing_cores.md)
 - [Storge and Structure](docs/storage_stucture.md)
 - [Naming Conventions](docs/naming_conventions.md)
 
