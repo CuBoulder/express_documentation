@@ -1,4 +1,6 @@
 
+### Overview
+
 The Express install profile includes 3 core modules; cu_core, cu_testing_core, and cu_pantheon_core. These cores allow institution and environemnt specific customizations within the standardized core, and they usually are used to perfom different tasks, based on environment, during the profile installation. 
 
 Anytime the Express profile is run on a different or new environment, it is encouraged to add a core module for it. 
