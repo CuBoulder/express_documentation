@@ -8,7 +8,7 @@ It is more work to define the UI for a custom entity, but that content also isn'
 
 Features is an excellent prototyping tool, but most parts of the Feature export can be moved up a level into the module making it easier to capture customizations or extension of initial functionality.  Defining a node type and fields with a Feature is a great example.  Capturing that in a Feature makes it more difficult to add additional fields to that node type with another Feature or custom module.
 
-The D7 version of Express is a mix of Feature exports and completely custom modules. Use of the "features" directory within Express is depredated.  All modules should be added to contrib or custom directories.
+The D7 version of Express is a mix of Feature exports and completely custom modules. Use of the "features" directory within Express is deprecated.  All modules should be added to contrib or custom directories.
 
 While it is easier to capture settings with Strongarm, we prefer to set and update variables in the install and update hooks.
 
