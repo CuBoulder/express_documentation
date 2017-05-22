@@ -16,6 +16,7 @@
 # Workflows
 - [Git strategy](docs/git_strategy.md)
 - [Bug Matrix](docs/update_matrix.md)
+- [Creating Custom Bundles](docs/creating_custom_bundles.md)
 - [Custom Bundle Updates](docs/custom_bundle_releases.md)
 - [Hardening Drupal Core](https://github.com/CuBoulder/drupal-7.x/blob/7.x/README.md)
 
