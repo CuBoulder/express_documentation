@@ -14,6 +14,7 @@
 - [Behat](docs/behat.md)
 
 # Workflows
+- [Deploying a release](docs/deploying_release.md)
 - [Git strategy](docs/git_strategy.md)
 - [Bug Matrix](docs/update_matrix.md)
 - [Creating Custom Bundles](docs/creating_custom_bundles.md)
