@@ -47,7 +47,7 @@ This is based on Gitflow.
     git push --set-upstream origin hotfix/[issue-key]
     ```
 
-* Start a Release
+* [Start a Release](#start_release)
 
     ```bash
     cd [path/to/git/repo]
@@ -98,7 +98,7 @@ This is based on Gitflow.
     git push origin dev
     ```
 
-* Finalize a Release
+* [Finalize a Release](#finalize_release)
 
     ```bash
     cd [path/to/git/repo]
