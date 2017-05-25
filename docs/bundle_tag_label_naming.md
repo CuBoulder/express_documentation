@@ -31,6 +31,21 @@ Labels are the user-friendly title of the module. This will appear in the card a
 ### Postman patch code example
 `{
   "meta":{
-    "name": "Readable Module Name"
+    "label": "Readable Module Name"
+  }
+}`
+
+## Full Postman Create code example
+`{
+  "git_url": "git@github.com:CuBoulder/cu_alumni_bundle.git",
+  "commit_hash": "27a9d2738b553170dc3c6bebb31d9abc14c5a6df",
+  "meta":{
+    "version": "7.x-1.1",
+    "code_type": "module",
+    "name": "my_bundle",
+    "label": "Readable Module Name",
+    "tag": ["addon_bundles","anothertagforexample"],
+    "is_current": true,
+    "dependency": ["588b90a736447521fd349bcc","588b90a036447521fd349bc2"]
   }
 }`
