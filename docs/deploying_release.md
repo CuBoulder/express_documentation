@@ -1,5 +1,12 @@
 # Multienvironment workflow for deploying an Express release using [Atlas](https://github.com/CuBoulder/atlas)
 
+As you are delpying, you can watch Atlas progress in two places, both are recommended.
+
+1. SSH onto the relevant Atlas server, become `osr_web_deploy` and run `tailatlas`. Credentials are in the password store.
+1. Watch the `general` channel in the Atlas slack instance.
+
+## Process
+
 1. Create a [release branch](https://github.com/CuBoulder/express_documentation/blob/master/docs/git_strategy.md#start_release).
 1. Deploy the branch to DEV as the `current` profile.
 1. Delete all `available` sites on DEV so that they can be recreated with the new profile.
