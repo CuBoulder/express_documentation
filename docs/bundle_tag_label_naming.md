@@ -36,7 +36,8 @@ Labels are the user-friendly title of the module. This will appear in the card a
 }`
 
 ## Full Postman Create code example
-`{
+```
+{
   "git_url": "git@github.com:CuBoulder/cu_alumni_bundle.git",
   "commit_hash": "27a9d2738b553170dc3c6bebb31d9abc14c5a6df",
   "meta":{
@@ -48,4 +49,5 @@ Labels are the user-friendly title of the module. This will appear in the card a
     "is_current": true,
     "dependency": ["588b90a736447521fd349bcc","588b90a036447521fd349bc2"]
   }
-}`
+}
+```
