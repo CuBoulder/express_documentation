@@ -18,22 +18,26 @@ If the bundle has no "bundle_group" assigned in the info file, it will show up i
 If the bundle does not have a bundle_group assigned or an atlas tag, it will not show up on any of the listing pages.
 
 ### Postman patch code example
-`{
+```
+{
   "meta":{
     "tag": ["addon_bundles","anothertagforexample"]
   }
-}`
+}
+```
 
 ## Labels
 
 Labels are the user-friendly title of the module. This will appear in the card as the title on the enable bundle list pages. Any time the name of the module appears to the user, it should use the label atlas field instead of the name atlas field.
 
 ### Postman patch code example
-`{
+```
+{
   "meta":{
     "label": "Readable Module Name"
   }
-}`
+}
+```
 
 ## Full Postman Create code example
 ```
