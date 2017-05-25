@@ -1,5 +1,7 @@
 # CU_profile_module_manager
 
+## Tags
+
 Tags are setup as the following:
   - Core bundles page tag is "core_bundles"
   - Add-on bundles page tag is "addon_bundles"
@@ -14,3 +16,21 @@ Only use bundle groups if you need to move a bundle out of the "Core bundles" pa
 If the bundle has no "bundle_group" assigned in the info file, it will show up in the "Core bundles" page. This is to maintain original usage of "bundle" at the end of the module's filename/machine name as the means of populating the profile_module_manager list page.
 
 If the bundle does not have a bundle_group assigned or an atlas tag, it will not show up on any of the listing pages.
+
+### Postman patch code example
+`{
+  "meta":{
+    "tag": ["addon_bundles","anothertagforexample"]
+  }
+}`
+
+## Labels
+
+Labels are the user-friendly title of the module. This will appear in the card as the title on the enable bundle list pages. Any time the name of the module appears to the user, it should use the label atlas field instead of the name atlas field.
+
+### Postman patch code example
+`{
+  "meta":{
+    "name": "Readable Module Name"
+  }
+}`
