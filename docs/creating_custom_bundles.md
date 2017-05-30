@@ -2,7 +2,7 @@
 
 - [Express Bundles](#express-bundles)
    - [What Are Bundles](#what-are-bundles)
-     - [Bundles should do the following things:](#bundles-should-do-the-following-things:)
+     - [Bundles should do the following things:](#bundles-should-do-the-following-things)
      - [Define Dependencies](#define-dependencies)
      - [Declare Requirements](#declare-requirements)
      - [Define Permisions](#define-permisions)
@@ -20,7 +20,7 @@
 
 Module bundles are a key feature of the Express install profile.  It allows additional functional to be added to what is provided in Express Core by a site owner without the requiring the 'administer modules' permission.  Bundles are also used to enforce the state of site.  Profile Module Manager combines the dependencies of the profile, core, and enabled bundles and reports the site as being in a error state if anything else is enabled.
 
-### Bundles should do the following things:
+### Bundles should do the following things
 
 1. [Define Dependencies](#define-dependencies)
 2. [Declare Requirements of Profile Module Manager Install](#declare-reqirements)
