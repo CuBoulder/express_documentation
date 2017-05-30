@@ -1,6 +1,6 @@
 # Express Bundles
 
-- [Express Bundles](#express-bundles)
+
    - [What Are Bundles](#what-are-bundles)
      - [Bundles should do the following things:](#bundles-should-do-the-following-things)
      - [Define Dependencies](#define-dependencies)
