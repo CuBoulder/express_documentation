@@ -1,8 +1,7 @@
 # Express Bundles
 
-
    - [What Are Bundles](#what-are-bundles)
-     - [Bundles should do the following things:](#bundles-should-do-the-following-things)
+     - [Bundles should do the following things](#bundles-should-do-the-following-things)
      - [Define Dependencies](#define-dependencies)
      - [Declare Requirements](#declare-requirements)
      - [Define Permisions](#define-permisions)
@@ -12,6 +11,12 @@
    - [Creating Custom Bundles](#creating-custom-bundles)
      - [Code Is New](#code-is-new)
      - [Code Is Coming From Express](#code-is-coming-from-express)
+   - [Tagging Custom Bundles](#tagging-custom-bundles)
+     - [Creating A Tag](#creating-a-tag)
+       - [Postman patch code example for tagging](#postman-patch-code-example-for-tagging)
+     - [Labels](#labels)
+       - [Postman patch code example for labeling](#postman-patch-code-example-for-labeling)
+     - [Full Postman Create code example](#full-postman-create-code-example)
    - [Releasing Custom Bundle Code](#releasing-custom-bundle-code)
      - [How To Succesfully Update A Custom Bundle's Code](#how-to-succesfully-update-a-custom-bundle's-code)
      - [Future Updates](#future-updates)
@@ -243,6 +248,64 @@ consider where the code is coming from.
 ### Code Is New
 
 ### Code Is Coming From Express
+
+## Tagging Custom Bundles
+
+### Creating A Tag
+
+Tags are setup as the following:
+  - Core bundles page tag is "core_bundles"
+  - Add-on bundles page tag is "addon_bundles"
+  - Request bundles page tag is "request_bundles"
+  - Beta bundles page tag is "beta_bundles"
+  - Admin bundles page tag is "admin_bundles"
+
+Bundle groups in info files (bundle_group = 'admin_bundles') mimic atlas tags exactly.
+
+Only use bundle groups if you need to move a bundle out of the "Core bundles" page. For example, if the "Chemistry titles" bundle is displaying under "Core bundles" and is tagged in atlas as "addon_bundles"--it will display on both pages. In order to have it only display on the Add-on bundles page, we need to add a bundle_group of "addon_bundles" to its info file.
+
+If the bundle has no "bundle_group" assigned in the info file, it will show up in the "Core bundles" page. This is to maintain original usage of "bundle" at the end of the module's filename/machine name as the means of populating the profile_module_manager list page.
+
+If the bundle does not have a bundle_group assigned or an atlas tag, it will not show up on any of the listing pages.
+
+#### Postman patch code example for tagging
+```
+{
+  "meta":{
+    "tag": ["addon_bundles","anothertagforexample"]
+  }
+}
+```
+
+### Labels
+
+Labels are the user-friendly title of the module. This will appear in the card as the title on the enable bundle list pages. Any time the name of the module appears to the user, it should use the label atlas field instead of the name atlas field.
+
+#### Postman patch code example for labeling
+```
+{
+  "meta":{
+    "label": "Readable Module Name"
+  }
+}
+```
+
+### Full Postman Create code example
+```
+{
+  "git_url": "git@github.com:CuBoulder/cu_alumni_bundle.git",
+  "commit_hash": "27a9d2738b553170dc3c6bebb31d9abc14c5a6df",
+  "meta":{
+    "version": "7.x-1.1",
+    "code_type": "module",
+    "name": "my_bundle",
+    "label": "Readable Module Name",
+    "tag": ["addon_bundles","anothertagforexample"],
+    "is_current": true,
+    "dependency": ["588b90a736447521fd349bcc","588b90a036447521fd349bc2"]
+  }
+}
+```
 
 ## Releasing Custom Bundle Code
 
