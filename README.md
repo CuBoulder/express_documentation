@@ -7,6 +7,7 @@
 - [Managing Patches for Drupal Core and Contrib](docs/patches.md)
 
 # Hosting
+- OIT/On Campus
 - [Pantheon](docs/pantheon-integration.md)
 - Platform
 
