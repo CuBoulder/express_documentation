@@ -15,7 +15,8 @@
 
 # Workflows
 - [Deploying a release](docs/deploying_release.md)
-- [Git strategy](docs/git_strategy.md)
+- [Git Strategy](docs/git_strategy.md)
+- [GitHub Strategy](docs/github_strategy.md)
 - [Bug Matrix](docs/update_matrix.md)
 - [Creating Custom Bundles](docs/creating_custom_bundles.md)
 - [Custom Bundle Updates](docs/custom_bundle_releases.md)
