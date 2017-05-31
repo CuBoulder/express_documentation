@@ -1,6 +1,6 @@
 # Coding
 - [Express Coding Standards](docs/coding_standards.md)
-- [Express Bundles](docs/express_bundles.md)
+- [Express Bundles](docs/creating_custom_bundles.md)
 - [Express Cores](docs/managing_cores.md)
 - [Naming Conventions](docs/naming_conventions.md)
 - [Storge and Structure](docs/storage_stucture.md)
