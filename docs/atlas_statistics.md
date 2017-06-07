@@ -43,7 +43,7 @@ https://osr-atlas03.int.colorado.edu/statistics?where={"nodes_by_type.page":{"$g
 
 **nodes_by_type.page** gets you down to where the code count stat is for the Basic Page content type. You can combine any parents in the hierarchy with periods to drill down to where you need to perform your search. 
 
-**"$gt":70"** looks for any "nodes_by_type.page" that have a higher count than 70, i.e. counts that are "greater than" 70 nodes. The MongoDB query syntax for $gt can be found here, and there is a lot of information on other operators: https://docs.mongodb.com/manual/reference/operator/query/gt/
+**"$gt":70** looks for any "nodes_by_type.page" that have a higher count than 70, i.e. counts that are "greater than" 70 nodes. The MongoDB query syntax for $gt can be found here, and there is a lot of information on other operators: https://docs.mongodb.com/manual/reference/operator/query/gt/
 
 ### Querying Lossely Typed Fields
 
