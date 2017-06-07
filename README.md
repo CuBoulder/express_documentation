@@ -14,6 +14,9 @@
 # Tests
 - [Behat](docs/behat.md)
 
+# Debugging 
+- [Atlas Statistics](https://github.com/CuBoulder/express_documentation/blob/master/docs/atlas_statistics.md)
+
 # Workflows
 - [Deploying a release](docs/deploying_release.md)
 - [Git Strategy](docs/git_strategy.md)
