@@ -4,7 +4,7 @@ Determining which services to integrate into our service is extremely important 
 
 We now have examples of both good and bad integrations.  Integrating services like Google Analytics, Vimeo, Twitter, and Facebook continue to work well and require little explanation or support.  Services like the Class Search and Community Funded required far more development and support time that we estimated.
 
-The following criteria for evaluating services was developed after comparing integrations that have gone well with ones that have gone poorly.  
+The following criteria for evaluating services were developed after comparing integrations that have gone well with ones that have gone poorly.  
 
 * Is this service accessible?  
 * Is this service secure?
