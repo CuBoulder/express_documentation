@@ -45,7 +45,9 @@ https://osr-atlas03.int.colorado.edu/statistics?where={"nodes_by_type.page":{"$g
 
 **"$gt":70** looks for any "nodes_by_type.page" that have a higher count than 70, i.e. counts that are "greater than" 70 nodes. The MongoDB query syntax for $gt can be found here, and there is a lot of information on other operators: https://docs.mongodb.com/manual/reference/operator/query/gt/
 
-### Querying Lossely Typed Fields
+**"$exists":false** while the number of basic pages will likely always be 1 or greater since we create page node on install, using $exists is helpful for a node type that may not even be listed (ie. nodes_by_type.webform)
+
+### Querying Loosely Typed Fields
 
 But what happens if you don't know what a site might have for a particular key? For those cases, we concatentate the data into a comma-separated string. 
 
