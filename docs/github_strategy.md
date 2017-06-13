@@ -17,7 +17,7 @@ Epics are the only issue type that require `evaluate` labels.
 1. Epic is reviewed by relevant team member.
     * As reviews are done, team members will either leave a comment and apply the `evaluate-1:More Information` label or remove the relevent `evaluate-2` label.
 1. Once all `evaluate` labels are removed, an Epic can be considered for inclusion in an upcoming Sprint.
-1. Issue is added to a Sprint (not neccisarily the _next_ sprint) and assigned to a **Developer**.
+1. Issue is added to a Sprint (not necessarily the _next_ sprint) and assigned to a **Developer**.
     * When a Sprint is created, a QA Epic will also be created.
 1. **Developer** scopes out the work and creates additional Issues of `type:task` as needed.
     * Issues of `type:task` may be added to the current sprint.
