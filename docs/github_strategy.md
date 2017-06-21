@@ -18,22 +18,16 @@ Epics are the only issue type that require `evaluate` labels.
     * As reviews are done, team members will either leave a comment and apply the `evaluate-1:More Information` label or remove the relevent `evaluate-2` label.
 1. Once all `evaluate` labels are removed, an Epic can be considered for inclusion in an upcoming Sprint.
 1. Issue is added to a Sprint (not necessarily the _next_ sprint) and assigned to a **Developer**.
-    * When a Sprint is created, a QA Epic will also be created.
-1. **Developer** scopes out the work and creates additional Issues of `type:task` as needed.
+1. **Developer** scopes out the work and creates additional Issues of `type:task` as needed and defines deployment of the Expic as `deploy:Bundle`, `deploy:Express` or `deploy:Other` and adds `qa:pre-merge` or `qa:post-merge` based on when it would be best for the Epic to be reviewed.  Some bundle updates can often be reviewed premerge while other changes require updates to the Express and muliple bundles.  Those updates should be labeled `qa:post-merge`.
     * Issues of `type:task` may be added to the current sprint.
 1. Issues of `type:task` are assigned to a **Developer** who writes code.
     * If Developers want to commit code to branches for each Issue of `type:task`, use a branch named after the Epic as an integration branch.
-1. If someone wants to preview code for any of the following reasons, apply the label `qa:Needs Instance` to the Epic and assign additional users as applicable.
-    * Concept acceptance (does this meet the Director's expectations). Assign **Director**.
-    * Documenation creation or update. Assign **Support Lead**.
-    * Feedback from non-technical users. Assign **additional users**.
-1. A **QA Engineer** will create an instance with the relevant code. They will remove the label `qa:Needs Instance` and apply the label `qa:Instance Ready`.
-1. Relevent users will review the instance and provide feedback in the Epic. When a user has completed their work on the Instance, they will remove themself from the list of assignees.
-1. When an Epic has no assignees, the **Developer** will create a Pull Request against the `dev` branch of Express.
-    * If the Epic needs QA during the release window (ex. Epic: Update Contrib as of May 1, 2017), create Issues of `type:qa` in the QA Epic for the Sprint (ex. updated Context do create 'Issue: Test Advanced Layout' and 'Issue: Test Advanced Design').
+1. If someone wants to preview an Epic for any of the following reasons, apply the label [request:Feature Branch](https://github.com/CuBoulder/express/issues?q=is%3Aopen+is%3Aissue+label%3A%22request%3AFeature+Branch%22) to the Epic and assign additional users as applicable.
+1. A **QA Technician** will create an instance with the relevant code for all issues labelled [request:Feature Branch](https://github.com/CuBoulder/express/issues?q=is%3Aopen+is%3Aissue+label%3A%22request%3AFeature+Branch%22) once the developer adds [ready-for:Feature Branch Review](https://github.com/CuBoulder/express/issues?q=is%3Aopen+is%3Aissue+label%3A%22ready-for%3AFeature+Branch+Review%22)
+1. The **Developer** creates a Pull Request against the `dev` branch of Express when the code is ready for automated testing and technical reviews. PR are merged when code is ready regardless of additional review or documentation.
 1. A **Developer** who was not involved in writing the code will review the code using the GitHub PR review tools.
 1. When all PR feedback is addressed, a **Developer** who was not involved in writing the code will merge the PR.
-1. The Feature will be deployed as part of the next release.
+1. The feature will be deployed as part of the next release.
 
 ---
 
@@ -92,12 +86,11 @@ Epics are the only issue type that require `evaluate` labels.
 
 ## Use of Type labels
 
-`type:Task`, `type:Bug`, `type:QA`
+`type:Task`, `type:Bug`
 
 * An Epic can stand alone as a `type:Task` and a single branch and Pull Request (PR) or have several tasks associated to it with their own branches and PRs.
 * Code should only be committed to branches for `type:Task` or `type:Bug`.
 * Epics, Tasks and Bugs all use different templates.
-* `type:QA` gives information about how a code change may impact current functioanlity to aid in testing during the Release window.
 
 ## Use of Improvement Labels
 
