@@ -32,3 +32,27 @@ Using the example below, you can create various grids, columns, or card interfac
   </div>
 </div>
 ```
+
+## Select Links
+
+Provide a user with a list of choices/destinations.
+
+```
+<div class="express-select-links">
+  <button>Select One</button>
+  <ul id="express-cache-select-options">
+    <li>
+      <a href="#">Choice Number One</a>
+    </li>
+    <li>
+      <a href="#">Choice Number Two</a>
+    </li>
+    <li>
+      <a href="#">Choice Number Three</a>
+    </li>
+    <li>
+      <a href="#">Choice Number Four</a>
+    </li>
+  </ul>
+</div>
+```
