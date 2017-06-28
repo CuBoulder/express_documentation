@@ -4,7 +4,7 @@
 
 Using the example below, you can create various grids, columns, or card interfaces. If you want simple columns, use 'express-columns' and 'express-column' classes instead of 'express-cards' and 'express-card'.
 
-<code>
+```
   <div class="express-cards">
   <div class="express-card col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="content">
@@ -31,4 +31,4 @@ Using the example below, you can create various grids, columns, or card interfac
     </div>
   </div>
 </div>
-</code>
+```
