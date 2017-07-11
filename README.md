@@ -9,7 +9,6 @@
 # Hosting
 - OIT/On Campus
 - [Pantheon](docs/pantheon-integration.md)
-- Platform
 
 # Tests
 - [Behat](docs/behat.md)
