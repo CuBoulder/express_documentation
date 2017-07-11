@@ -309,6 +309,9 @@ Labels are the user-friendly title of the module. This will appear in the card a
 
 ## Releasing Custom Bundle Code
 
+### Info File
+
+#### ERUS Module Update Status
 There are many custom bundles, a.k.a plus bundles, that exist in the Express ecosystem. We make issues, plan sprints, and merge code in, but we currently don't have any good process for releasing the code once it's ready to deploy. Previously, a developer had to be in the know as to when new code should be pushed to production and which sites needed updating with the new code.
 
 Taking into account the fact that Drupal already has a mechanism in place to check for code updates, we will now utilize this mechanism so that indicual sites can report when they need their code updated instead of needing to have a developer remember where new code needs placed. 
@@ -329,6 +332,13 @@ project status url = https://github.com/org-account/your-module
 
 Along with the "project status url" key, the "version" and "project" keys are neccessary for ERUS to give you an accurate report of which modules need updated.
 
+#### Bundle Tag
+
+You will also need to add the tag info listed above to each info file so that users in Express can see your bundle in the correct spot, add-on, beta, etc. 
+
+```
+bundle_group = beta_bundles
+```
 ### How To Succesfully Update A Custom Bundle's Code
 
 1. Finish your sprint and prepare the repository for a release like you normally would. 
