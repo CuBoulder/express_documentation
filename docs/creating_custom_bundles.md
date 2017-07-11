@@ -18,8 +18,10 @@
        - [Postman patch code example for labeling](#postman-patch-code-example-for-labeling)
      - [Full Postman Create code example](#full-postman-create-code-example)
    - [Releasing Custom Bundle Code](#releasing-custom-bundle-code)
+     - [Info File](#info-file)
+       - [ERUS Module Update Status](#erus-module-update-status)
+       - [Bundle Tag](#bundle-tag)
      - [How To Succesfully Update A Custom Bundle's Code](#how-to-succesfully-update-a-custom-bundle's-code)
-     - [Future Updates](#future-updates)
 
 ## What Are Bundles 
 
@@ -310,6 +312,7 @@ Labels are the user-friendly title of the module. This will appear in the card a
 ## Releasing Custom Bundle Code
 
 ### Info File
+There are several keys in the the bundle's info file that need to be considered when creating or updating bundle code. The ERUS update and bundle tags need to be included in every bundle in order for that bundle to be deployed correctly. 
 
 #### ERUS Module Update Status
 There are many custom bundles, a.k.a plus bundles, that exist in the Express ecosystem. We make issues, plan sprints, and merge code in, but we currently don't have any good process for releasing the code once it's ready to deploy. Previously, a developer had to be in the know as to when new code should be pushed to production and which sites needed updating with the new code.
@@ -339,6 +342,7 @@ You will also need to add the tag info listed above to each info file so that us
 ```
 bundle_group = beta_bundles
 ```
+
 ### How To Succesfully Update A Custom Bundle's Code
 
 1. Finish your sprint and prepare the repository for a release like you normally would. 
@@ -348,8 +352,3 @@ bundle_group = beta_bundles
 5. Run md5 on your downloaded file, e.g. "md5 module-7.x-1.1.tar.gz".
 6. Edit your release notes and add the checksum, e.g. "md5: ceb3af66ab78e65def488a175a54d5d4".
 7. Go to "admin/reports/updates" to check if your custom module reports needing an update. 
-
-### Future Updates
-
-* In the future, the manual steps for adding the checksum to the release page might be automated.
-* Currently, the ERUS module only supports GitHub projects, which is where most Express code is hosted, but additional external repository hosts might be added in the future.
