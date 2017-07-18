@@ -4,6 +4,8 @@
 
 Notice: Web Express Open Labs closed on [date]
 
+Due to the weather, there will be NO Web Express Open Lab tomorrow. 
+
 Due to the number of people away, there will be NO Web Express Open Lab tomorrow. 
 
 Due to the number of people away, there will be NO Web Express Open Lab this week. 
