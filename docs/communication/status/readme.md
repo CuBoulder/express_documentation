@@ -15,7 +15,7 @@ We are deploying an update to [bundle name]. More details at [link to content on
  
 We are postponing the [date] release until [date].
  
-We are postponing the [date] release or additonal testing until [date].
+We are postponing the [date] release for additonal testing until [date].
  
 # Completed Maintenance
  
