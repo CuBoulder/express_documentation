@@ -3,7 +3,7 @@
 
 Web Express sites will be upgraded on [date]. More info at [link to content on Web Central]
 
-Heads up! Web Express Sites  will be receiving updates on [date(s)] starting [time]. Details: [link to content on Web Central]
+Heads up! Web Express Sites will be receiving updates on [date(s)] starting [time]. Details: [link to content on Web Central]
 
 # Scheduled or Current Maintenance
 
@@ -19,7 +19,7 @@ We are postponing the [date] release or additonal testing until [date].
  
 # Completed Maintenance
  
-Web Express [version rollout is complete. Details at [link to content on Web Central]
+Web Express [version] rollout is complete. Details at [link to content on Web Central]
 
 # Outages
 
