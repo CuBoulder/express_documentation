@@ -7,7 +7,7 @@
 - [Managing Patches for Drupal Core and Contrib](docs/patches.md)
 
 # Communication
-- [Traing messages](docs/communication/training/)
+- [Training messages](docs/communication/training/)
 - [Release communication plan](docs/communication/release_comm_steps)
 
 # Hosting
