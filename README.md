@@ -6,6 +6,10 @@
 - [Storge and Structure](docs/storage_stucture.md)
 - [Managing Patches for Drupal Core and Contrib](docs/patches.md)
 
+# Communication
+- [Traing messages](docs/communication/training/)
+- [Release communication plan](docs/communication/release_comm_steps)
+
 # Hosting
 - OIT/On Campus
 - [Pantheon](docs/pantheon-integration.md)
