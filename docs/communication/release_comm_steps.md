@@ -1,24 +1,24 @@
 # One - Two days before release:
 
-## Twitter (Annie/Jo): 
+## Twitter (Service Communicator/Service Manager): 
 Heads up! We are scheduled to roll-out Web Express 2.X.X on {MM/DD} starting in the A.M. and throughout the day.
 
-## Website homepage (Annie/Jo): 
+## Website homepage (Service Communicator/Service Manager): 
 Heads up! We are scheduled to roll-out Web Express 2.X.X on {MM/DD} starting in the morning and throughout the day.
 
 # Night before release (5p)
 
-## Twitter (Annie/Jo)
+## Twitter (Service Communicator/Service Manager): 
 Reminder: Web Express 2.X.X roll-out is scheduled for tomorrow A.M. (MM/DD). Status will be changed to Under Maintenance once it begins.
 
 # Day of release
 
-## Email (Annie/Jo)
+## Email (Service Communicator/Service Manager): 
 Schedule email to go out 8:00a the day of the release. Emails can be built and scheduled in Marketing Cloud in advance to help. If necessary, we can ping the ecomm team (Erin, Jess & Meagan) to jump in and help.
 
 # Just before start of update:
 
-## Status page (James/Kevin/Jo)
+## Status page (Dev Deployment/Service Manager/Support)
 
 Change status
 Under Maintainance 
@@ -28,7 +28,7 @@ We are rolling out Web Express 2.X.X throughout the day. Details can be found at
 
 # When Release is complete
 
-## Status page (James/Kevin/Jo)
+## Status page (Dev Deployment/Service Manager/Support)
 
 Change status
 Operational
