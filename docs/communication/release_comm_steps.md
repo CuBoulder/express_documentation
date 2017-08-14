@@ -35,3 +35,8 @@ Operational
 
 Incident message w/push to twitter: 
 The Web Express 2.X.X release is complete and back to operational. You can find details at colorado.edu/webcentral/updates
+
+# Day after the release with new features
+
+## Promote online demos
+twitter: Join us for a short online demo of the new features added in the Web Express 2.X.X release: colorado.edu/webcentral/demos 
