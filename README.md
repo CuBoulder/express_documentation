@@ -9,6 +9,7 @@
 # Communication
 - [Training messages](docs/communication/training/)
 - [Release communication plan](docs/communication/release_comm_steps.md)
+- [Email list creation](docs/communication/release_comm_steps.md)
 
 # Hosting
 - OIT/On Campus
