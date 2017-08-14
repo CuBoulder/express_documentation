@@ -1,4 +1,5 @@
-# Create an email recipient list: (do this two or three days before scheduled email send)
+# Create an email recipient list: 
+## (do this two or three days before scheduled email send)
 1) Log into Web Central
 2) Click on ‘Webcentral Tools’ link 
 3) Select ‘Export All Users’
