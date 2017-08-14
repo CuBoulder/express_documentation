@@ -10,7 +10,7 @@
 - [Training messages](docs/communication/training/)
 - [Release communication plan](docs/communication/release_comm_steps.md)
 - [Email list creation](docs/communication/email_list_creation.md)
-- [Common Status messages])(docs/communication/status)
+- [Common Status messages](docs/communication/status)
 
 # Hosting
 - OIT/On Campus
