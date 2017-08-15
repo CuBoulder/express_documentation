@@ -23,7 +23,8 @@ Schedule email to go out 8:00a the day of the release. Emails can be built and s
 Change status
 Under Maintainance 
 
-Schedule maintenance message w/push to twitter: 
+Schedule maintenance message w/push to twitter
+
 Maintenance Name: Web Express 2.X.X Update
 Maintenance details: We are rolling out Web Express 2.X.X throughout the day. Details can be found at colorado.edu/webcentral/updates
 
