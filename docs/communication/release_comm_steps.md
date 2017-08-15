@@ -26,6 +26,7 @@ Under Maintainance
 Schedule maintenance message w/push to twitter
 
 Maintenance Name: Web Express 2.X.X Update
+
 Maintenance details: We are rolling out Web Express 2.X.X throughout the day. Details can be found at colorado.edu/webcentral/updates
 
 # When Release is complete
