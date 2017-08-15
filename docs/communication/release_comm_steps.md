@@ -36,8 +36,11 @@ Maintenance details: We are rolling out Web Express 2.X.X throughout the day. De
 Change status
 Operational
 
-Incident message w/push to twitter: 
-The Web Express 2.X.X release is complete and back to operational. You can find details at colorado.edu/webcentral/updates
+Schedule maintenance Update w/push to twitter:
+
+Change to Completed: 
+
+Message: The Web Express 2.X.X release is complete and back to operational. You can find details at colorado.edu/webcentral/updates
 
 # Day after the release with new features
 
