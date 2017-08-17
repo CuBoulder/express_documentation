@@ -4,7 +4,7 @@
      - [Bundles should do the following things](#bundles-should-do-the-following-things)
      - [Define Dependencies](#define-dependencies)
      - [Declare Requirements](#declare-requirements)
-     - [Define Permisions](#define-permisions)
+     - [Define Permissions](#define-permissions)
      - [Define Inline Help](#define-inline-help)
      - [Add Settings Links](#add-settings-links)
    - [Express Core Or Custom Bundle?](#express-core-or-custom-bundle)
