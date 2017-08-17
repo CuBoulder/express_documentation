@@ -7,7 +7,7 @@
      - [Define Permisions](#define-permisions)
      - [Define Inline Help](#define-inline-help)
      - [Add Settings Links](#add-settings-links)
-   - [Express Core Or Custom Bundle?](#express-core-or-custom-bundle?)
+   - [Express Core Or Custom Bundle?](#express-core-or-custom-bundle)
    - [Creating Custom Bundles](#creating-custom-bundles)
      - [Code Is New](#code-is-new)
      - [Code Is Coming From Express](#code-is-coming-from-express)
@@ -21,7 +21,7 @@
      - [Info File](#info-file)
        - [ERUS Module Update Status](#erus-module-update-status)
        - [Bundle Tag](#bundle-tag)
-     - [How To Succesfully Update A Custom Bundle's Code](#how-to-succesfully-update-a-custom-bundle's-code)
+     - [How To Succesfully Update A Custom Bundle's Code](#how-to-succesfully-update-a-custom-bundles-code)
 
 ## What Are Bundles 
 
@@ -30,11 +30,11 @@ Module bundles are a key feature of the Express install profile.  It allows addi
 ### Bundles should do the following things
 
 1. [Define Dependencies](#define-dependencies)
-2. [Declare Requirements of Profile Module Manager Install](#declare-reqirements)
+2. [Declare Requirements of Profile Module Manager Install](#declare-requirements)
 3. [Define Permissions](#define-permissions)
 4. [Define Inline Help](#define-inline-help)
 5. Any alters hook, CSS, js, and tpls (when the bundle is mainly used to add contib)
-6. [Add Settings Links](#add-setting-links)
+6. [Add Settings Links](#add-settings-links)
 7. Install/breakup express_layout settings variables
 
 ### Define Dependencies
@@ -50,7 +50,7 @@ bundle_cache_clear = 1
 bundle_context_clear = 1
 ```
 
-### Define Permisions
+### Define Permissions
 
 ```
 function cu_social_media_bundle_secure_permissions($role) {
