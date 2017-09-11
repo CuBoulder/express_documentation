@@ -20,14 +20,18 @@ Schedule email to go out 8:00a the day of the release. Emails can be built and s
 
 ## Status page (Dev Deployment/Service Manager/Support)
 
-Change status
-Under Maintainance 
-
-Schedule maintenance message w/push to twitter
+Log into StatusPage.io.
+Go to [Incidents](https://manage.statuspage.io/pages/9sm03v9xr9m6/incidents) > Scheduled Maintenance Tab
+Click the **+ SCHEDULED MAINTAINANCE** button 
+Maintenance Name: 
 
 Maintenance Name: Web Express 2.X.X Update
 
-Maintenance details: We are rolling out Web Express 2.X.X throughout the day. Details can be found at colorado.edu/webcentral/updates
+Maintenance details: We are rolling out Web Express 2.X.X throughout the day. 
+
+*Add "Details can be found at colorado.edu/webcentral/updates" to details for major releases where an email was sent.
+
+Schedule maintenance message w/push to twitter
 
 # When Release is complete
 
