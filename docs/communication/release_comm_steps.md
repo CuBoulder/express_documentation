@@ -1,3 +1,7 @@
+For minor updates to Web Express, only the last number in the release is updated.  If the current release is 2.6.2, the update will be 2.6.3.  For these releases, there is no need to communicate with the service users before the day the update is being pushed to produciton.
+
+For updates to the service that include new features or major changes, we will updated the version of Express accordingly.  If the current release is 2.6.2, the update would be 2.7.0.  These releases require communication using Twitter and a Newsletter in advance of the update.
+
 # One - Two days before release:
 
 ## Twitter (Service Communicator/Service Manager): 
