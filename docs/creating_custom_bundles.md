@@ -330,10 +330,12 @@ package = My-modules
 core = 7.x
 version = 7.x-1.0
 project = your_module
-project status url = https://github.com/org-account/your-module
+project status url = https://github.com/org-account/your_module
 ```
 
 Along with the "project status url" key, the "version" and "project" keys are neccessary for ERUS to give you an accurate report of which modules need updated.
+- The "project" key should be the machine name of your module which should match the GitHub repository's name.
+- The "version" key should match the Drupal version naming convention, e.g. "7.x-1.0". Every time you update a bundle a version, you need to up the version number and make a full release for the update check to work. 
 
 #### Bundle Tag
 
@@ -351,4 +353,5 @@ bundle_group = beta_bundles
 4. Download the release files, e.g. "module-7.x-1.1.tar.gz".
 5. Run md5 on your downloaded file, e.g. "md5 module-7.x-1.1.tar.gz".
 6. Edit your release notes and add the checksum, e.g. "md5: ceb3af66ab78e65def488a175a54d5d4".
-7. Go to "admin/reports/updates" to check if your custom module reports needing an update. 
+7. Optional & Broken - Add "Release type:" to the release notes with a value of "Bug fixes", "New features", or "Security update". The default release type is "Bug Fixes". ex. "Release type: New features" 
+8. Go to "admin/reports/updates" to check if your custom module reports needing an update. 
