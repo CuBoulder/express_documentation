@@ -1,6 +1,6 @@
-Every year we are asked to more external services with Web Express. These are services that are offered by both 3rd party vendors (ie. Goolge Analytics) as well as services provided by other CU units (ie. UIS’s ClassesSearch API).  
+Every year we are asked to more external services with Web Express. These are services that are offered by both 3rd party vendors (ie. Google Analytics) as well as services provided by other CU units (ie. UIS’s ClassesSearch API).  
 
-Determining which services to integrate into our service is extremely important to the stablity of our service.  While service integration can add additional functionality Web Express users would benefit from, an unstable and/or unsupported service will have a negative impact on all Web Express users if it becomes a drain on our server, bandwidth, development and/or support resources.  
+Determining which services to integrate into our service is extremely important to the stability of our service.  While service integration can add additional functionality Web Express users would benefit from, an unstable and/or unsupported service will have a negative impact on all Web Express users if it becomes a drain on our server, bandwidth, development and/or support resources.  
 
 We now have examples of both good and bad integrations.  Integrating services like Google Analytics, Vimeo, Twitter, and Facebook continue to work well and require little explanation or support.  Services like the Class Search and Community Funded required far more development and support time that we estimated.
 
@@ -20,4 +20,4 @@ The following criteria for evaluating services were developed after comparing in
 * Can we track the status of support requests?
 * Does the service have an existing Drupal integration that is reporting several installs and appears to be well supported?
 
-Answering no to one of two of these (other than accessiblity and security) wouldn’t mean we’d refuse to integrate the service, but answering no to all or most of these should be a red flag that we could have issues with this service.
+Answering no to one of two of these (other than accessibility and security) wouldn’t mean we’d refuse to integrate the service, but answering no to all or most of these should be a red flag that we could have issues with this service.
