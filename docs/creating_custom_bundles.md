@@ -253,6 +253,32 @@ consider where the code is coming from.
 
 ## Tagging Custom Bundles
 
+Profile Module Manager supports two types of bundles: core and admin.
+
+To use PMM's bundle pages, you can use one of two options:
+  - Machine Name
+    - Module's machine name ends in "_bundle" = Core Bundle page
+    - Module's machine name ends in "_admin_bundle" = Admin Bundle page
+  - Bundle Group (if machine name doesn't match)
+    - Add "bundle_group = core_bundles" to info file = Core Bundle page
+    - Add "bundle_group = admin_bundles" to info file = Admin Bundle page
+    
+Our CU Profile Module Manager adds three additional bundle pages:
+  - Add-on Bundles
+  - Request Bundles
+  - Beta Bundles
+  
+There's only **one** way to display a bundle on any of the pages from CU-PMM:
+  - Add a label and tag to the Atlas code asset for the bundle (see: "Creating A Tag" below)
+  
+### Troubleshooting Bundle Page Display Issues
+
+If you do not see your bundle showing up at all, check Atlas for proper lable and tag--it must have both.
+
+If your bundle shows up in the wrong bundle page, check Atlas for multiple versions of the code asset and ensure proper labels/tags are present.
+
+If your bundle shows up in both core/admin **and** either addon/request/beta, check to see if the machine name of the bundle ends in "_bundle". If so, add "bundle_group = xxxxx_bundles" to the .info file of your bundle. (Note: machine name bundles will show up in either core or admin unless you specifically move them via the bundle_group element in the .info file.)
+
 ### Creating A Tag
 
 Tags are setup as the following:
