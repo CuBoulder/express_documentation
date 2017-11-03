@@ -32,3 +32,6 @@
 
 # Services
 - [Service Integrations](docs/evaluating_services.md)
+
+# Data security
+- [Data collection](/docs/data_security)
