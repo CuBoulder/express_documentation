@@ -1,0 +1,24 @@
+The security office has provided the following information related to what data can be captured via forms on Web Express:
+
+Here is a link to the CU System Data Classification & Impact:
+http://www.cu.edu/ois/data-classifications-impact
+
+Since moving to HTTPS the security office has modified what can be collected via forms: 
+For the groups who have FERPA data the URL I’ve been referring people is http://www.cu.edu/ois/data-classifications-impact.
+
+The short summary is that the following data elements must be encrypted when stored and are likely not appropriate for WebExpress: 
+SSN 
+NID 
+Financial Aid (except work study) 
+loan and bank account numbers 
+health information 
+disability 
+race 
+ethnicity 
+citizenship 
+legal presence 
+visas 
+religion.  
+
+Otherwise, so long as they are enabling HTTPS and ensuring access control (for example, when collecting form input 
+the results shouldn’t be publicly accessible) we can use WebExpress for student data.  
