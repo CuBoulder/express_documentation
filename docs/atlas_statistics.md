@@ -62,3 +62,6 @@ https://osr-atlas03.int.colorado.edu/statistics?where={"nodes_other":{"$regex":"
 ```
 
 **nodes_other** isused in the same way as the previous query, but we are using the $regex operator now. The documentation for the $regex operator (https://docs.mongodb.com/manual/reference/operator/query/regex/) says a lot of things, but I was only able to look for a string of text that might be in the field I am trying to query. So, since "collection" appears in the "nodes_other" field example, that site record will be returned even though it isn't the only other node type listed.
+
+**versions**
+add ?version=all to an id to see all versions
