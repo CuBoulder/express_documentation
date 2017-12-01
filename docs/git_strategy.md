@@ -105,7 +105,7 @@ This is based on Gitflow.
     git checkout master
     git pull
     git merge --no-ff release/[version.to.release]  # Same as merging Github Pull Request
-    git tag -a [version.to.release]
+    git tag -a [version.to.release] -m "release [version.to.release] added"
     git push origin master
     git push origin --tags
     git checkout dev
