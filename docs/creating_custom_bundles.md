@@ -296,6 +296,10 @@ If the bundle has no "bundle_group" assigned in the info file, it will show up i
 
 If the bundle does not have a bundle_group assigned or an atlas tag, it will not show up on any of the listing pages.
 
+### Bundle Lifecycle
+
+![Evaluation -> Protype -> Beta -> Refine -> Public -> Deprecated](https://github.com/CuBoulder/express_documentation/blob/master/docs/bundle_lifecycle.png)
+
 #### Postman patch code example for tagging
 ```
 {
@@ -363,13 +367,6 @@ Along with the "project status url" key, the "version" and "project" keys are ne
 - The "project" key should be the machine name of your module which should match the GitHub repository's name.
 - The "version" key should match the Drupal version naming convention, e.g. "7.x-1.0". Every time you update a bundle a version, you need to up the version number and make a full release for the update check to work. 
 
-#### Bundle Tag
-
-You will also need to add the tag info listed above to each info file so that users in Express can see your bundle in the correct spot, add-on, beta, etc. 
-
-```
-bundle_group = beta_bundles
-```
 
 ### How To Succesfully Update A Custom Bundle's Code
 
