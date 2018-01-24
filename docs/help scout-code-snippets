@@ -1,0 +1,24 @@
+Code snippets for Help Scout tutorials.
+
+# Steps
+
+<dl> 
+ <dt>
+  1
+ </dt> 
+ <dd> 
+  <p> Step one text and images can go here. </p>
+ </dd> 
+ <dt>
+  2
+ </dt> 
+  <dd> 
+  <p> Step two text and images can go here. </p>
+ </dd> 
+ <dt>
+  3
+ </dt> 
+  <dd> 
+  <p> Step three text and images can go here. </p>
+ </dd> 
+</dl>
