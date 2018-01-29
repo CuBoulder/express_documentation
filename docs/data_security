@@ -7,7 +7,8 @@ Since moving to HTTPS the security office has modified what can be collected via
 For the groups who have FERPA data the URL I’ve been referring people is http://www.cu.edu/ois/data-classifications-impact.
 
 The short summary is that the following data elements must be encrypted when stored and are likely not appropriate for WebExpress: 
-SSN 
+SSN
+SID 
 NID 
 Financial Aid (except work study) 
 loan and bank account numbers 
