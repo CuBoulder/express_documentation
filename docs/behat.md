@@ -162,3 +162,5 @@ The actual Travis settings and script are located in the .travis.yml file. That 
 
 # Optimizing Tests
 TBD...
+
+Remember not to name any testing module "_bundle" or else it appears in the bundle screen. https://github.com/CuBoulder/express/issues/1480 
