@@ -1,7 +1,7 @@
 # Coding
 - [Express Coding Standards](docs/coding_standards.md)
 - [Express Bundles](docs/creating_custom_bundles.md)
-- [Express Cores](docs/managing_cores.md)
+- [Express Cores and Hosting Bundles](docs/managing_cores_bundles_hosting.md)
 - [Naming Conventions](docs/naming_conventions.md)
 - [Storge and Structure](docs/storage_stucture.md)
 - [Managing Patches for Drupal Core and Contrib](docs/patches.md)
