@@ -2,7 +2,7 @@
 ## Directory Structure
 In order to start writing tests, the first thing you will have to understand is how to create or add to a test file.
 + The actual tests you will be writing are called scenarios and scenario outlines, are driven by step definitions, and are included in a Feature file.
-+ Feature files are groups of sceanrios and are located inside of test suites.
++ Feature files are groups of scenarios and are located inside of test suites.
 + Tests suites include groups of related features.
 + Contexts help to extend step definitions that are included in the general Behat framework. Contexts are placed in the "bootstrap" folder.
 + The behat.yml configuration file contains all the neccessary configuration for Behat to run features.
