@@ -193,7 +193,7 @@ The step definition defined above takes a screenshot if the test fails and stick
 # Travis CI Integration
 The Express Behat test suite is run via Travis CI on every commit attached to a PR in the Express Github repository and also run when a PR is merged into dev. When the test run completes, a pass or fail notice will be sent back to the particular commit or PR and you will be able to see this on the PR page.
 
-[screenshot]
+![screen shot 2018-03-29 at 12 50 05 pm](https://user-images.githubusercontent.com/3640707/38108002-cbcd27cc-3350-11e8-8a60-b174e1fe75a2.png)
 
 Currently, there are two test runs performed in parallel: one without JavaScript tags `@~exclude_all_bundles&&~broken&&~javascript` and one with JavaScript tags `@javascript&&~exclude_all_bundles&&~broken`. You can use environmental variables on Travis CI to split test runs into a matrix.
 
