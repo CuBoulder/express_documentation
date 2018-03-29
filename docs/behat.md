@@ -213,7 +213,26 @@ env:
 
 The `.travis.yml` file contains all of steps needed to run the test suite on Travis CI, and the `tests/travis-ci` folder contains assets and scripts that are needed for Travis CI integration. Different Drupal settings are required to run the tests on Travis CI, and so that settings file is placed in the travis-ci folder and copied to the right place during the .travis.yml script run.
 
-# Optimizing Tests
-TBD...
+# Sauce Labs Integration
 
+There are two drivers that can be used to run the Behat features: Goutte and Selenium. The Goutte driver is "headless" and performs requests as you would see while using the command line. The Selenium driver connects to an actual browser and sends instructions that the browser implements. The Selenium driver is only used when the `@javascript` tag is placed on a feature or scenario. All of the tests that don't include that tag will be run by the Goutte driver.
+
+Originally, the Selenium server was setup on Travis CI; however, due to versions of browsers changing and trying to keep that in sync with Selenium server versions, the tests broke frquently only from Selenium server configurations. There were also issues with PHP versions and Behat dependencies dropping PHP 5.3 support, which we ran until recently. Even though some of these issues have been resolved, Sauce Labs was chosen as a Selenium server testing provider for ease of use.
+
+There are already instructions on running tests locally that explain how the Express site connects to Sauce Labs durning a test run, https://github.com/CuBoulder/express/tree/dev/tests/behat. Travis CI has an easy way of starting up the "Sauce Connect Proxy" binary, but a tunnel is open for every test run even if no JS tests are included in the test run.
+
+Due to these reasons, the Sauce Connect Proxy is started manually using `start-sauce.sh` which looks for JS Behat tags and skips connecting if there are no JS tags.
+
+# Optimizing Tests
+
+@todos:
+- Optimize memory utilization. Travis has I think 4GB of memory that can be used with PHP, OpCache, MySQL, and maybe even Memcache if that were setup again.
+- Expand the test matrix. Right now only two different test runs are triggered on every PR commit, but splitting up the JS test run would be the most beneficial addition to the test suite matrix. The JS test take far longer to run than ones using the default Goutte driver.
+
+# Troubleshooting
+
+### Naming
 Remember not to name any testing module "_bundle" or else it appears in the bundle screen. https://github.com/CuBoulder/express/issues/1480 
+
+### Pause Tests On Sauce To Debug
+If your test is failing, you can temporarily add a `@javascript` tag to debug it on Sauce Labs. The `And I break` step definition will pause the test and then you can take over the site to see what's going on. Sauce Labs also records screenshots of tests runs that are held for 30 days. 
