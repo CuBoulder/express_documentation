@@ -149,7 +149,7 @@ The `@javascript` tag is a special, reserved tag used when you need to test a sc
 
 # Running Tests
 
-To run Behat tests, you must be in the root folder where the `behat.yml` configuration file is located. To run the whole test suite you would just type `./bin/behat` into your terminal. You can export the path to the binary to run behat from anywhere, `behat`, but since the context files are usually included with the binary, that step is overkill if you only use Behat on this project. If you only wanted to run a particular test suite, you can type `./bin/behat --suite=name_of_suite`. To run a particular tag you can type `behat --tags @tag_name`.
+To run Behat tests, you must be in the root folder where the `behat.yml` configuration file is located. To run the whole test suite you would just type `./bin/behat` into your terminal. You can export the path to the binary to run behat from anywhere, `behat`, but since the context files are usually included with the binary, that step is overkill if you only use Behat on this project. If you only wanted to run a particular test suite, you can type `./bin/behat --suite=name_of_suite`. To run a particular tag you can type `behat --tags @tag_name`. There are also a couple of conditionals that only matter when tests are run on Travis CI.
 
 ```bash
 # Run the whole test suite.
@@ -195,23 +195,23 @@ The Express Behat test suite is run via Travis CI on every commit attached to a 
 
 ![screen shot 2018-03-29 at 12 50 05 pm](https://user-images.githubusercontent.com/3640707/38108002-cbcd27cc-3350-11e8-8a60-b174e1fe75a2.png)
 
-Currently, there are two test runs performed in parallel: one without JavaScript tags `@~exclude_all_bundles&&~broken&&~javascript` and one with JavaScript tags `@javascript&&~exclude_all_bundles&&~broken`. You can use environmental variables on Travis CI to split test runs into a matrix.
+Currently, there are two test runs performed in parallel: one without JavaScript tags `@~exclude_all_bundles&&~broken&&~javascript` and one with JavaScript tags `@javascript&&~exclude_all_bundles&&~broken`. You can use commit messages to trigger different types of test runs on Travis.
 
-```yaml
-env:
-  - BEHAT_TAGS="@~exclude_all_bundles&&~broken&&~javascript"
-  - BEHAT_TAGS="@javascript&&~exclude_all_bundles&&~broken"
-  
-# ...stuff
+```bash
+# Add "===js" to you commit message on Travis to run JS tests as well as headless tests.
+./bin/behat --config behat.travis.yml --verbose --tags '~@exclude_all_bundles&&~@broken&&@javascript'
 
-# Run Behat tests in parallel.
-# Tags are defined in the "env" key at the top of this file.
-- cd ../behat
-- ./bin/behat --config behat.travis.yml --verbose --tags $BEHAT_TAGS
+# Add "===build" to build Express on every commit attached to a PR.
+drush si express --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="Express" --yes
+
+# Otherwise, the site will be imported from an export of the site after install.
+drush sql-cli < $HOME/cache/express.sql
 
 ```
 
-The `.travis.yml` file contains all of steps needed to run the test suite on Travis CI, and the `tests/travis-ci` folder contains assets and scripts that are needed for Travis CI integration. Different Drupal settings are required to run the tests on Travis CI, and so that settings file is placed in the travis-ci folder and copied to the right place during the .travis.yml script run.
+When a PR is merged into the dev branch, a new site will be built as well as havign the JS tests run.
+
+The `.travis.yml` file contains all of steps needed to run the test suite on Travis CI, and the `tests/travis-ci` folder contains assets and scripts that are needed for Travis CI integration. Different Drupal settings are required to run the tests on Travis CI, and so that settings file is placed in the travis-ci folder and copied to the right place during the `.travis.yml` script run.
 
 # Sauce Labs Integration
 
