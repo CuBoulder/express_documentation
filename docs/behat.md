@@ -219,9 +219,7 @@ There are two drivers that can be used to run the Behat features: Goutte and Sel
 
 Originally, the Selenium server was setup on Travis CI; however, due to versions of browsers changing and trying to keep that in sync with Selenium server versions, the tests broke frquently only from Selenium server configurations. There were also issues with PHP versions and Behat dependencies dropping PHP 5.3 support, which we ran until recently. Even though some of these issues have been resolved, Sauce Labs was chosen as a Selenium server testing provider for ease of use.
 
-There are already instructions on running tests locally that explain how the Express site connects to Sauce Labs durning a test run, https://github.com/CuBoulder/express/tree/dev/tests/behat. Travis CI has an easy way of starting up the "Sauce Connect Proxy" binary, but a tunnel is open for every test run even if no JS tests are included in the test run.
-
-Due to these reasons, the Sauce Connect Proxy is started manually using `start-sauce.sh` which looks for JS Behat tags and skips connecting if there are no JS tags.
+There are already instructions on running tests locally that explain how the Express site connects to Sauce Labs durning a test run, https://github.com/CuBoulder/express/tree/dev/tests/behat. Travis CI has an easy way of starting up the "Sauce Connect Proxy" binary, and setup there will be different than manually starting the proxy locally.
 
 # Optimizing Tests
 
