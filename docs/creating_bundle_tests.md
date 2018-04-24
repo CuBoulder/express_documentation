@@ -65,8 +65,11 @@ Travis CI will only check the default branch when attempting to run tests. So, i
 #### Bundle Variables
 
 ```bash
+  # Bundle name variables.
   export BUNDLE_NAME="cu_digital_campaign_bundle"
   export ADD_MODULES="cu_ab_test cu_dc_tests"
+  
+  # Behat tag variables.
   export EXPRESS_JS_BEHAT_TAGS="~@exclude_all_bundles&&~@broken&&~@bundle_conflict&&@javascript"
   export EXPRESS_HEADLESS_BEHAT_TAGS="~@exclude_all_bundles&&~@broken&&~@javascript"
   export BUNDLE_BEHAT_TAGS="~@exclude_all_bundles&&~@broken"
