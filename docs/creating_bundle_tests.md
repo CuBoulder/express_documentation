@@ -19,6 +19,23 @@ To find out more about Behat and how to go about writing tests in general, you c
 
 You should start writing your Behat tests locally and then run them on the Travis CI setup. For instructions on how to set up and run the test suite locally, please follow: https://github.com/CuBoulder/express/blob/dev/tests/behat/README.md
 
+Once you have the Express Behat suite running and passing, you can add bundle tests to the Express Behat test folder to make sure they work. Copy the feature files into https://github.com/CuBoulder/express/tree/dev/tests/behat/features. It is a good idea to make a tag for your bundle and put it at the top of the feature files. That way you can run just your tag when writing or debugging tests.
+
+Once they pass locally, you'll want to add them to the bundle in the tests folder you will need to create.
+
+```
+-| bundle_root
+--| modules
+---| ...
+--| tests
+---| behat
+----| features
+------| my.feature
+------| my-second.feature
+```
+
+To have the tests run on Travis, all you have to do is add the feature files in `tests/behat/features`, but for local testing, you'll need to manually copy back and forth between directories.
+
 ## GitHub Integration
 
 Now that you've written some tests and ran them successfully locally, we can get on with this show...If you haven't done either of those things, follow the steps mentioned in the previous links.
