@@ -252,6 +252,10 @@ consider where the code is coming from.
 
 ### Code Is Coming From Express
 
+## Creating Bundle Tests
+
+Please be nice and do this. For easier browsing, the instructions have been moved to: https://github.com/CuBoulder/express_documentation/blob/master/docs/creating_bundle_tests.md
+
 ## Tagging Custom Bundles
 
 Profile Module Manager supports two types of bundles: core and admin.
