@@ -11,6 +11,7 @@
    - [Creating Custom Bundles](#creating-custom-bundles)
      - [Code Is New](#code-is-new)
      - [Code Is Coming From Express](#code-is-coming-from-express)
+   - [Creating Bundle Tests](https://github.com/CuBoulder/express_documentation/blob/master/docs/creating_bundle_tests.md)
    - [Tagging Custom Bundles](#tagging-custom-bundles)
      - [Creating A Tag](#creating-a-tag)
        - [Postman patch code example for tagging](#postman-patch-code-example-for-tagging)
