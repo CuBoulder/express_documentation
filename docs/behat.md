@@ -221,6 +221,13 @@ Originally, the Selenium server was setup on Travis CI; however, due to versions
 
 There are already instructions on running tests locally that explain how the Express site connects to Sauce Labs durning a test run, https://github.com/CuBoulder/express/tree/dev/tests/behat. Travis CI has an easy way of starting up the "Sauce Connect Proxy" binary, and setup there will be different than manually starting the proxy locally.
 
+# Guidelines When Writing Tests
+
+- No general wait steps ever, Pick an element on the page and wait for that to appear using `I wait for the <element> element to appear` step definition. The only exception are things like the count-up shortcode that are time-based
+- Scenario Outlines are to be used when there are multiple variables that need tested. If only one variable is used then it slows the test down by repeating steps before the variable is used. Add multiple lines that map to each variable in that case instead of using Scenario Outlines.
+- No need for `@api` tag. This was used in the past for a driver that integrated with Drupal, but that driver is no longer used.
+- You need to think about how this works when no bundles are enabled. Example: People filter labels in the Express feature folder. That won't work if the People Bundle isn't enabled. As bundles are moved out of the Express repository, tests need to take that into account.
+
 # Optimizing Tests
 
 @todos:
