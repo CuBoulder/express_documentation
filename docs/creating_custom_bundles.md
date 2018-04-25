@@ -250,6 +250,9 @@ consider where the code is coming from.
 
 ### Code Is New
 
+- Add a license. You can copy the one from the main Express repo.
+- Add a readme pointing back to this file and something about what the bundle does. If there are tutorials for it, link to those as well.
+
 ### Code Is Coming From Express
 
 ## Creating Bundle Tests
