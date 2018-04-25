@@ -50,16 +50,17 @@ The `.travis.yml` file is where all the magic happens. You can take a sample tem
 
 The tests will not run automatically. You need to enable the integration on both GitHub and Travis CI. 
 
-
 Each repo has a settings tab. If you can't see that tab at the root of a repo, e.g. https://github.com/CuBoulder/cu_digital_campaign_bundle/, then you can't add any integrations. Please contact a team member to sort out repo permissions.
 
 If you do see "Settings", you need to go to "settings/installations" in the repo and you'll see a screen that looks like...
 
-...add pic of integration screen
+![screen shot 2018-04-25 at 10 45 51 am](https://user-images.githubusercontent.com/3640707/39260145-cf378b3e-4875-11e8-9e85-646903f3bbb0.png)
 
 You can choose "Travis CI" from the select list. I thought you had to do more, but that is only if you want Travis to do something on GitHub after the test run completes.
 
 Now on Travis, go to your profile page, e.g. https://travis-ci.org/profile/alexfinnarn, and you'll see a list of repositories with which you have access to enable integrations. You may have to click on the CU Boulder organization, but then you should see a toggle for the bundle you are adding tests to. Once the toggle is set, you are good to go.
+
+![screen shot 2018-04-25 at 10 46 51 am](https://user-images.githubusercontent.com/3640707/39260198-ff42749c-4875-11e8-8363-bc13d01641a3.png)
 
 #### Sauce Labs Environmental Variables
 
