@@ -89,6 +89,9 @@ Travis CI will only check the default branch when attempting to run tests. So, i
 ```bash
   # Bundle name variables.
   export BUNDLE_NAME="cu_digital_campaign_bundle"
+  
+  # Enable additional modules not installed by default.
+  # If N/A, ADD_MODULES="null"
   export ADD_MODULES="cu_ab_test cu_dc_tests"
   
   # Behat tag variables.
