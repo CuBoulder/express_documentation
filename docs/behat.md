@@ -187,6 +187,8 @@ To run Behat tests, you must be in the root folder where the `behat.yml` configu
 
 If you get an error about no Drupal installation existing, then you'll want to change the root location Behat looks to find a Drupal site.
 
+For more instructions on running tests locally: https://github.com/CuBoulder/express/blob/dev/tests/behat/README.md
+
 # Debugging Tests
 Occasionally, you'll want more information from the test run for debugging purposes. In that case, you can have Behat post output in a verbose mode `./bin/behat --verbose`.
 
@@ -226,6 +228,9 @@ drush si express --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --
 
 # Otherwise, the site will be imported from an export of the site after install.
 drush sql-cli < $HOME/cache/express.sql
+
+# Add "!==express" to not run Express Behat tests on bundle repos.
+# Otherwise, both the Express tests and the bundle tests will be run for your commit.
 
 ```
 
