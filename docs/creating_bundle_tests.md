@@ -68,6 +68,8 @@ Sauce Labs is used to run the JavaScript Behat tests, as opposed to the regular 
 
 ![screen shot 2018-04-25 at 10 48 45 am](https://user-images.githubusercontent.com/3640707/39260301-447ea210-4876-11e8-9a01-e3d68357638b.png)
 
+The username and access key are shared via LastPass. Ask a team member if you don't have access to the Sauce Labs service user account.
+
 #### Default Branch
 
 ```yaml
@@ -106,3 +108,16 @@ Originally, I was going to add a `@campus_map_conflict` tag to those tests, but 
 
 ### CodeClimate
 
+You can add the needed files to run static analyses via CodeClimate from https://github.com/CuBoulder/cu_digital_campaign_bundle. They include:
+- CodeClimate Config - https://github.com/CuBoulder/cu_digital_campaign_bundle/blob/dev/.codeclimate.yml
+- PHP MD Config - https://github.com/CuBoulder/cu_digital_campaign_bundle/blob/dev/.phpmd.xml
+
+Permissions need changed for you to be able to add the CodeClimate integration to GitHub, but for now, you can add those files.
+
+## Going Green
+
+At the end of this process, you should be able to make a PR into the default branch of the repo and have Travis CI and CodeClimate come back as green checks on the PR conversation page.
+
+![screen shot 2018-04-25 at 10 56 54 am](https://user-images.githubusercontent.com/3640707/39260665-67edba96-4877-11e8-8313-e904e4331faf.png)
+
+Then, you can merge your PR into the default branch and every new PR will now have two checks run before code is reviewed. Congrats!
