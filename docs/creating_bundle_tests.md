@@ -1,7 +1,7 @@
 
 # Bundle Tests
 
-Hooray, you are about to write some tests and prevent dumb bugs from getting into your code in the future! Take a minute to pat yourself on the back. When people talk about testing code, they generally separate it into two categories: unit and functioanl testing. 
+Hooray, you are about to write some tests and prevent dumb bugs from getting into your code in the future! Take a minute to pat yourself on the back. When people talk about testing code, they generally separate it into two categories: unit and functional testing. 
 
 Unit tests are for minute bits of code that do one thing. You don't need to bootstrap an entire application to run unit tests and they provide more immediate feedback for developers modifying code. 
 
