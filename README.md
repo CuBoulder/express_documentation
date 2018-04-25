@@ -18,6 +18,7 @@
 
 # Tests
 - [Behat](docs/behat.md)
+- [Bundle Tests](docs/creating_bundle_tests.md)
 
 # Debugging 
 - [Atlas Statistics](https://github.com/CuBoulder/express_documentation/blob/master/docs/atlas_statistics.md)
