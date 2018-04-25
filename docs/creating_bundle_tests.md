@@ -66,6 +66,8 @@ Now on Travis, go to your profile page, e.g. https://travis-ci.org/profile/alexf
 
 Sauce Labs is used to run the JavaScript Behat tests, as opposed to the regular headless Behat tests. To make the integration with Sauce Labs work, you need to enter `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` on the Travis settings page, e.g. https://travis-ci.org/CuBoulder/cu_digital_campaign_bundle/settings. 
 
+![screen shot 2018-04-25 at 10 48 45 am](https://user-images.githubusercontent.com/3640707/39260301-447ea210-4876-11e8-9a01-e3d68357638b.png)
+
 #### Default Branch
 
 ```yaml
