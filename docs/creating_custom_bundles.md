@@ -252,8 +252,14 @@ consider where the code is coming from.
 
 - Add a license. You can copy the one from the main Express repo.
 - Add a readme pointing back to this file and something about what the bundle does. If there are tutorials for it, link to those as well.
+- Write tests before you release anything.
 
 ### Code Is Coming From Express
+
+- Add a license. You can copy the one from the main Express repo.
+- Add a readme pointing back to this file and something about what the bundle does. If there are tutorials for it, link to those as well.
+- Copy any tests over and write new ones.
+- Make sure to plan for deprecating the code in the Express repo and enabling the bundle on all sites using it in production.
 
 ## Creating Bundle Tests
 
