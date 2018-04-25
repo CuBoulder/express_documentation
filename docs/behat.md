@@ -1,4 +1,24 @@
 # Writing Tests
+
+   * [Writing Tests]()
+      * [Directory Structure](#directory-structure)
+      * [Suites](#suites)
+      * [Features]()
+      * [Scenarios]()
+      * [Step Definitions]()
+      * [Scenario Outlines]()
+      * [Tags]()
+   * [Running Tests]()
+   * [Debugging Tests]()
+   * [Travis CI Integration]()
+   * [Sauce Labs Integration]()
+   * [Guidelines When Writing Tests]()
+   * [Optimizing Tests]()
+   * [Troubleshooting]()
+         * [Naming]()
+         * [Pause Tests On Sauce To Debug]()
+
+
 ## Directory Structure
 In order to start writing tests, the first thing you will have to understand is how to create or add to a test file.
 + The actual tests you will be writing are called scenarios and scenario outlines that are driven by step definitions and included in a feature file.
