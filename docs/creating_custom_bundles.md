@@ -323,6 +323,8 @@ If the bundle does not have a bundle_group assigned or an atlas tag, it will not
 }
 ```
 
+Tags can also be edited and created for code assets using the hosted version of Lil' Shrugger on Pantheon. 
+
 ### Labels
 
 Labels are the user-friendly title of the module. This will appear in the card as the title on the enable bundle list pages. Any time the name of the module appears to the user, it should use the label atlas field instead of the name atlas field.
@@ -335,6 +337,8 @@ Labels are the user-friendly title of the module. This will appear in the card a
   }
 }
 ```
+
+Labels can also be edited and created for code assets using the hosted version of Lil' Shrugger on Pantheon. 
 
 ### Full Postman Create code example
 ```
@@ -352,6 +356,8 @@ Labels are the user-friendly title of the module. This will appear in the card a
   }
 }
 ```
+
+Code assets can also be fully created or edited using the hosted version of Lil' Shrugger on Pantheon. 
 
 ## Releasing Custom Bundle Code
 
