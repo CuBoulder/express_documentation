@@ -273,9 +273,6 @@ To use PMM's bundle pages, you can use one of two options:
   - Machine Name
     - Module's machine name ends in "_bundle" = Core Bundle page
     - Module's machine name ends in "_admin_bundle" = Admin Bundle page
-  - Bundle Group (if machine name doesn't match)
-    - Add "bundle_group = core_bundles" to info file = Core Bundle page
-    - Add "bundle_group = admin_bundles" to info file = Admin Bundle page
     
 Our CU Profile Module Manager adds three additional bundle pages:
   - Add-on Bundles
@@ -291,7 +288,7 @@ If you do not see your bundle showing up at all, check Atlas for proper lable an
 
 If your bundle shows up in the wrong bundle page, check Atlas for multiple versions of the code asset and ensure proper labels/tags are present.
 
-If your bundle shows up in both core/admin **and** either addon/request/beta, check to see if the machine name of the bundle ends in "_bundle". If so, add "bundle_group = xxxxx_bundles" to the .info file of your bundle. (Note: machine name bundles will show up in either core or admin unless you specifically move them via the bundle_group element in the .info file.)
+If your bundle shows up in both core/admin **and** either addon/request/beta, then the code is wrong and needs fixing...
 
 ### Creating A Tag
 
@@ -302,17 +299,15 @@ Tags are setup as the following:
   - Beta bundles page tag is "beta_bundles"
   - Admin bundles page tag is "admin_bundles"
 
-Bundle groups in info files (bundle_group = 'admin_bundles') mimic atlas tags exactly.
-
-Only use bundle groups if you need to move a bundle out of the "Core bundles" page. For example, if the "Chemistry titles" bundle is displaying under "Core bundles" and is tagged in atlas as "addon_bundles"--it will display on both pages. In order to have it only display on the Add-on bundles page, we need to add a bundle_group of "addon_bundles" to its info file.
-
-If the bundle has no "bundle_group" assigned in the info file, it will show up in the "Core bundles" page. This is to maintain original usage of "bundle" at the end of the module's filename/machine name as the means of populating the profile_module_manager list page.
+You should use the Lil' Shrugger application hosted on Pantheon to add tags to code assets. https://github.com/CuBoulder/lil_shrugger/wiki/Code
 
 If the bundle does not have a bundle_group assigned or an atlas tag, it will not show up on any of the listing pages.
 
 ### Bundle Lifecycle
 
 ![Evaluation -> Protype -> Beta -> Refine -> Public -> Deprecated](https://github.com/CuBoulder/express_documentation/blob/master/docs/bundle_lifecycle.png)
+
+All bundles should start off being tagged as "beta_bundles". The developer's responsibility is to create the code, and then the QA and support teams will let developers know when the bundles need to be moved to "addon_bundles" or "request_bundles". For "admin_bundles" a developer can make that call and add the tag. 
 
 #### Postman patch code example for tagging
 ```
