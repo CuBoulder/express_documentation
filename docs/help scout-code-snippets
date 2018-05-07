@@ -22,3 +22,10 @@ Code snippets for Help Scout tutorials.
   <p> Step three text and images can go here. </p>
  </dd> 
 </dl>
+
+# Callout 
+
+<p class="callout-yellow dashed"> 
+  <strong>Callout Title Goes here</strong><br/>
+  Callout text goes here. 
+</p>
