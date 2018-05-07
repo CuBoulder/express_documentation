@@ -25,6 +25,11 @@ Code snippets for Help Scout tutorials.
 
 # Callout 
 
+<p class="callout-blue dashed"> 
+  <strong>Callout Title Goes here</strong><br/>
+  Callout text goes here. 
+</p>
+
 <p class="callout-yellow dashed"> 
   <strong>Callout Title Goes here</strong><br/>
   Callout text goes here. 
