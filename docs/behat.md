@@ -190,27 +190,58 @@ If you get an error about no Drupal installation existing, then you'll want to c
 For more instructions on running tests locally: https://github.com/CuBoulder/express/blob/dev/tests/behat/README.md
 
 # Debugging Tests
-Occasionally, you'll want more information from the test run for debugging purposes. In that case, you can have Behat post output in a verbose mode `./bin/behat --verbose`.
+Occasionally, you'll want more information from the test run for debugging purposes. In that case, you can have Behat post output in verbose mode `./bin/behat --verbose`. The `.travis.yml` file ends up running tests in verbose mode. There are many options you can pass to the Behat executable, and you can see some of those in the `behat-tests.sh` file. 
 
-Another useful debugging tool is to use step definitions to capture infomation you can't see while the test is running. When using the Selenium Driver, which emulates a real browser, it is useful to see what the browser is seeing when a test fails.
-
-```php
-  /**
-   * @AfterStep
-   * 
-   * Take a screenshot after a failed JS test.
-   */
-  public function takeScreenShotAfterFailedStep($scope) {
-    if (99 === $scope->getTestResult()->getResultCode()) {
-      $driver = $this->getSession()->getDriver();
-      if (!($driver instanceof Selenium2Driver)) {
-        return;
-      }
-      file_put_contents('/tmp/test.png', $this->getSession()->getDriver()->getScreenshot());
-    }
-  }
+```yaml
+echo "Running Express headless tests..."
+./bin/behat --stop-on-failure --strict --config behat.travis.yml --verbose --tags ${EXPRESS_HEADLESS_BEHAT_TAGS}
 ```
-The step definition defined above takes a screenshot if the test fails and sticks it in a `tmp` directory. You then can get information from that screenshot, like if an element is present on the page when a step fails.
+
+`behat --help` will give you all of the options you can use potentially for debugging.
+
+Another useful debugging tool is to use step definitions to capture infomation you can't see while the test is running. There are a couple of step definitions that you can use for debugging purposes.
+
+```gherkin
+# Checks the previous response for a string.
+Then the response should contain "<h1>Example Title</h1>"
+
+# Breaks the current test until a key is pressed.
+And I break
+
+# Prints out the last response.
+Then print last response
+
+# Print current URL. You can see this in --verbose mode.
+Then print current URL
+```
+
+## Sauce Labs
+
+With the Sauce Labs integration, you can watch tests that fail and take over interacting with the site before the failure occurs. You can add `And I break` to formally do so or just click in the broswer window of the video recording while the test is running to take control. The Sauce Labs connection will time out and so you don't have much time to look at what's going on.
+
+Adding a `@javascript` tag to a test, even if it doesn't need one, can be a greate way to run that test in isolation.
+
+## Local Debugging
+
+You should ALWAYS start debugging a test locally. You can use information in the Travis logs, but blindly making a change and then rerunning via Travis takes a lot of time. There are instructions on how to set up testing locally here: https://github.com/CuBoulder/express/blob/dev/tests/behat/README.md
+
+[image]
+
+A test failure on Travis CI will look like the screenshot above. The `--verbose` option shows you a lot of information. 
+- The place in the code where the test failed: `features/Express/aaa_role_sync/aaa_role_sync.feature:7`
+- The exception thrown at the error: `Form field with id|name|label|value "edit-secure-permissions-sync-roles" not found.`
+- The response code: `HTTP/1.1 200`
+- The URL where the test failed: `http://127.0.0.1:8057/admin/config/people/secure_permissions`
+- The driver being used: `GoutteDriver`
+- The method being called on failure: `FeatureContext::checkOption()`
+
+At the end of each test run, you will see a report of passed, failed, and skipped tests. You also might see an "undefined" number of steps. On Travis CI, the tests will hang at that point since you press `1` to automatically generate missing step definitions. 
+
+Once you choose to generate them, you will get stubs to put into `FeatureContext.php`. Or you can see that a commonly used step was misspelled, grep for that scenario, and fix the typo. 
+
+[undefined image]
+
+Once you fix the tests, make sure to use the commit flags of `===build and ===js` to run all of the test suite before merging a PR into the default branch.
 
 # Travis CI Integration
 The Express Behat test suite is run via Travis CI on every commit attached to a PR in the Express Github repository and also run when a PR is merged into dev. When the test run completes, a pass or fail notice will be sent back to the particular commit or PR and you will be able to see this on the PR page.
