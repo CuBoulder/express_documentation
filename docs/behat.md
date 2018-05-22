@@ -279,10 +279,12 @@ There are already instructions on running tests locally that explain how the Exp
 
 # Guidelines When Writing Tests
 
-- No general wait steps ever, Pick an element on the page and wait for that to appear using `I wait for the <element> element to appear` step definition. The only exception are things like the count-up shortcode that are time-based
-- Scenario Outlines are to be used when there are multiple variables that need tested. If only one variable is used then it slows the test down by repeating steps before the variable is used. Add multiple lines that map to each variable in that case instead of using Scenario Outlines.
-- No need for `@api` tag. This was used in the past for a driver that integrated with Drupal, but that driver is no longer used.
-- You need to think about how this works when no bundles are enabled. Example: People filter labels in the Express feature folder. That won't work if the People Bundle isn't enabled. As bundles are moved out of the Express repository, tests need to take that into account.
+- **No general wait steps ever.** Pick an element on the page and wait for that to appear using `I wait for the <element> element to appear` step definition. The only exception are things like the count-up shortcode that are time-based.
+- **Scenario Outlines are to be used when there are multiple variables that need tested.** If only one variable is used then it slows the test down by repeating steps before the variable is used. Add multiple lines that map to each variable in that case instead of using Scenario Outlines.
+- **No need for `@api` tag.** This was used in the past for a driver that integrated with Drupal, but that driver is no longer used.
+- **Think about how the test works when no bundles are enabled.** Example: People filter labels in the Express feature folder. That won't work if the People Bundle isn't enabled. As bundles are moved out of the Express repository, tests need to take that into account.
+- **Ask for content you need to be there for test runs rather than creatign side effects.** While it can be tempting to create content and then use that in a future scenario, changes to the test suite can render those dependent tests useless later on. It is better to think about content you need for a test but don't need to test it's creation, e.g. adding a block row with pre-defined blocks, and file an issue in the Express repo for a developer to seed that content.
+- **If you need to use content in a future scenario, use a path alias.** Creating a node early on in the feature file with a unique alias, e.g. "my-test-needs-01234", makes it nearly impossible to create alias collisions with other nodes and makes it really easy to target in tests later on.
 
 # Optimizing Tests
 
