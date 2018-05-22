@@ -225,7 +225,7 @@ Adding a `@javascript` tag to a test, even if it doesn't need one, can be a grea
 
 You should ALWAYS start debugging a test locally. You can use information in the Travis logs, but blindly making a change and then rerunning via Travis takes a lot of time. There are instructions on how to set up testing locally here: https://github.com/CuBoulder/express/blob/dev/tests/behat/README.md
 
-[image]
+![screen shot 2018-05-22 at 1 49 13 pm](https://user-images.githubusercontent.com/3640707/40387008-83de345e-5dc8-11e8-8c5f-4e09a5e31ecb.png)
 
 A test failure on Travis CI will look like the screenshot above. The `--verbose` option shows you a lot of information. 
 - The place in the code where the test failed: `features/Express/aaa_role_sync/aaa_role_sync.feature:7`
@@ -239,7 +239,7 @@ At the end of each test run, you will see a report of passed, failed, and skippe
 
 Once you choose to generate them, you will get stubs to put into `FeatureContext.php`. Or you can see that a commonly used step was misspelled, grep for that scenario, and fix the typo. 
 
-[undefined image]
+![screen shot 2018-05-22 at 1 55 08 pm](https://user-images.githubusercontent.com/3640707/40386992-79fb2f0a-5dc8-11e8-88e8-fd05f6bb01d3.png)
 
 Once you fix the tests, make sure to use the commit flags of `===build and ===js` to run all of the test suite before merging a PR into the default branch.
 
