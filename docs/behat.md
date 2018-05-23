@@ -215,6 +215,10 @@ Then print last response
 Then print current URL
 ```
 
+## Example Test Failure Debugging Process
+
+This test run (https://travis-ci.org/CuBoulder/express/builds/382412802#L3811) fails 
+
 ## Sauce Labs
 
 With the Sauce Labs integration, you can watch tests that fail and take over interacting with the site before the failure occurs. You can add `And I break` to formally do so or just click in the broswer window of the video recording while the test is running to take control. The Sauce Labs connection will time out and so you don't have much time to look at what's going on.
