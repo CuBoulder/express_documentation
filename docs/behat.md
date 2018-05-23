@@ -279,6 +279,7 @@ There are already instructions on running tests locally that explain how the Exp
 
 # Guidelines When Writing Tests
 
+- **Try to use visible text instead of HTML for targeting.** There are some things in the Drupal UI and the Express frontend that can be hard to target via a label or human-readable text but your scenarios should aim to target text rather than CSS selectors. Someone reading the test has a hard time knowing what the CSS means but an easier time finding the text on the page.
 - **No general wait steps ever.** Pick an element on the page and wait for that to appear using `I wait for the <element> element to appear` step definition. The only exception are things like the count-up shortcode that are time-based.
 - **Scenario Outlines are to be used when there are multiple variables that need tested.** If only one variable is used then it slows the test down by repeating steps before the variable is used. Add multiple lines that map to each variable in that case instead of using Scenario Outlines.
 - **No need for `@api` tag.** This was used in the past for a driver that integrated with Drupal, but that driver is no longer used.
