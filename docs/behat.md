@@ -217,7 +217,18 @@ Then print current URL
 
 ## Example Test Failure Debugging Process
 
-This test run (https://travis-ci.org/CuBoulder/express/builds/382412802#L3811) fails 
+This test run (https://travis-ci.org/CuBoulder/express/builds/382412802#L3811) fails because the "form_manager" isn't in Express but is included in the forms bundle. Here are the steps I took to "fix" this test.
+
+1. Look for where the test exists in the output: `features/cu_people_bundle/3peoplelistpage.feature:8`.
+2. Go to line 8 to look at the test. 
+3. See from the exception that the problem is with the last example in the test: `Exception: Failed to log in as user 'form_manager' in features/bootstrap/FeatureContext.php:97`.
+4. Remove "form_manager" from the examples section.
+5. Place a `@current` tag above that test and then run only that test: `./bin/behat -c behat.local.yml --stop-on-failure --verbose --tags @current`.
+6. Work on the test until it passes. For this example, removing "form_manager" did the trick.
+7. Optional: Sleuth for other related problems. When I searched the features directory for "form_manager" I spotted three other instances I deleted. Follow-up tests in the "cu_forms_bundle" can be created for places "form_manager" was used.
+8. Make a PR into Express so that the test runs on Travis.
+9. **Caveat** IF you are changing code for an install or use a `@javascript` tag, then you need to use commit flags to run all of the test suite AND build out an Express site. More about those flags can be found in the "Travis CI Integration" section below: `git commit -m"===js and correct content_editor menu test ===build"`.
+10. Repeat for the next failure.
 
 ## Sauce Labs
 
