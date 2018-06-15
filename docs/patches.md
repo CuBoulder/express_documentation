@@ -9,7 +9,7 @@ cd ~/.drush && composer require davereid/drush-patchfile:dev-master
 You may need to drush cc before drush will reconzie the new command. Once the command is installed, you must configure the location of the patch.make relative to the Drupal root in your drushrc.php.
 
 ```
-$options['patch-file'] = 'profiles/cu_fit/patches.make';
+$options['patch-file'] = 'profiles/express/patches.make';
 ```
 
 There are several useful commands in patchfile, but these are the most important to our workflow.
