@@ -6,6 +6,12 @@ If you already have composer configured, you can install using
 cd ~/.drush && composer require davereid/drush-patchfile:dev-master
 ```
 
+or install using git 
+
+```
+cd ~/.drush && git clone https://bitbucket.org/davereid/drush-patchfile.git
+```
+
 You may need to drush cc before drush will reconzie the new command. Once the command is installed, you must configure the location of the patch.make relative to the Drupal root in your drushrc.php.
 
 ```
