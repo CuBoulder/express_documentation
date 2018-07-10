@@ -23,6 +23,7 @@
 
 # Debugging 
 - [Atlas Statistics](https://github.com/CuBoulder/express_documentation/blob/master/docs/atlas_statistics.md)
+- [Drupal Kibana Logs](https://github.com/CuBoulder/express_documentation/blob/master/docs/kibana_drupal_debugging.md)
 
 # Workflows
 - [Deploying a release](docs/deploying_release.md)
