@@ -49,6 +49,7 @@ Add a `settings.local.php` file in the root with the following:
 
 ```php
 <?php
+
 /**
  * @file
  * Local configuration for your Backdrop site.
