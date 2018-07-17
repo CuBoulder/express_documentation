@@ -37,7 +37,7 @@ Pantheon has really nice backup tools listed under "Database/Files -> Export". U
 
 Lando has a Backdrop recipe that can be used to host sites locally. They actually have a Pantheon integration recipe, but I've never used it and it might complicate your investigations. Plus, the Backdrop recipe needs testing to make sure it is accurate for other users not interested in hosting on Pantheon. Install Lando first, if you haven't already: https://docs.devwithlando.io/installation/installing.html
 
-Once you are in the root of your project, all you need to do is type `lando start` in your terminal and you should see some URLs to go to. The SSL vanity URL is working for me, https://expressbackdrop.lndo.site/, but your milage may vary.
+Once you are in the root of your project, all you need to do is type `lando start` in your terminal and you should see some URLs to go to. The SSL vanity URL is working for me, https://expressbackdrop.lndo.site/, but your milage may vary. The documentation for the recipe is pretty decent: https://docs.devwithlando.io/tutorials/backdrop.html
 
 Once you click install, you'll notice that the site just starts installing without you having to enter database credentials or anything like that. It is accomplished by using a database protocol URL `$database = 'mysql://user:pass@localhost/database_name';` instead of an array passed back to Drupal.
 
