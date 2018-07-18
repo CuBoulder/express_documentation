@@ -63,8 +63,16 @@ After the Lando install, your `settings.php` file should have those `$config_dir
 
 ## Start Converting A Module
 
-Now you should be able to push...
+You can follow https://api.backdropcms.org/converting-modules-from-drupal to start converting a module. No surprises here. There are also example blog posts to look at: https://www.lullabot.com/articles/porting-drupal-7-modules-to-backdrop. If you want to start a blog post about your journey, go ahead. The blog needs fresh content.
 
-### Merging From Master
+### Reporting Any Issues You See In Core/Adding To Docs
 
-Occasionally there will be code updates that you'll want to merge into the master branch so others can pull those in. On the "Code" tab in a Pantheon site dashboard, it will list any commits from the master branch that you can look at and choose to merge into your codebase. Ideally, you will merge these in as they come so no 
+As I'm going through the Backdrop docs and trying some things out on my local site, I've seen some issues and wanted to chime in on PHP version support. Backdrop has a separate repo for issues apart from the codebase: https://github.com/backdrop/backdrop-issues. 
+
+You also might see something that would be a good addition or change to a doc. I saw mention of using Lando locally and then an issue about adding that to Backdrop core. The solution was to add a page on the main site, https://backdropcms.org/try-backdrop, but I think users might not get to that page since "Download Backdrop" just starts a download. My suggestion would be to have the "Download Backdrop" link go to https://backdropcms.org/try-backdrop. They have a repo for their main site at https://github.com/backdrop-ops/backdropcms.org/issues that I will file an issue in.
+
+## Merging Into The Pantheon Master Branch
+
+Occasionally there will be code updates that you'll want to merge into the master branch so others can pull those in. I think it'd be nice to make the master branch of the Pantheon site what Express would like in Backdrop. Once you finish a module, you can add it to the master branch. 
+
+On the "Code" tab in a Pantheon site dashboard, it will list any commits from the master branch that you can look at and choose to merge into your codebase. Ideally, you will merge these in as they come so no merge conflicts happen. Each merge should be about a contrib module or set of modules so hopefully there won't be many conflicts.  
