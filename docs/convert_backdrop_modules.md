@@ -67,7 +67,11 @@ You can follow https://api.backdropcms.org/converting-modules-from-drupal to sta
 
 ### Readme.md and LICENSE.txt
 
-There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example. 
+There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example.
+
+### PHP Versions
+
+Backdrop supports PHP 5.3 as part of its mission to have low cost of ownership and also for D6 -> Backdrop migrations. It is nice to switch to PHP 5.3 to see if everything works as you are developing. You can use PHP 7 while you are developing, but at points, you should switch back to PHP 5.3 and click around. Eventually, there will be some sort of testing template I will create for CIs to run tests in different versions of PHP.
 
 ### Running The Tests
 
