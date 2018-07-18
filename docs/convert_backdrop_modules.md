@@ -65,6 +65,18 @@ After the Lando install, your `settings.php` file should have those `$config_dir
 
 You can follow https://api.backdropcms.org/converting-modules-from-drupal to start converting a module. No surprises here. There are also example blog posts to look at: https://www.lullabot.com/articles/porting-drupal-7-modules-to-backdrop. If you want to start a blog post about your journey, go ahead. The blog needs fresh content.
 
+### Running The Tests
+
+A lot of modules will have SimpleTests written for them. You can run those via the Backdrop admin UI on "admin/config/development/testing" once you turn on the Testing module. Running the tests can identify problems in the code base.
+
+### Removing Drupal Compatibility Layer
+
+Backdrop has a Drupal compatibilty layer in the 1.x branch that will be removed by 2.x. That is why it is important to remove that layer as you convert a module. In PHPStorm, I can see which functions are deprecated. I think this is a default PHPStorm feature, but it puts a line through all deprecated functions.
+
+...image from PHPStorm...
+
+If you don't have an IDE that can do this, usually you can search for "Drupal" in your module's codebase. You can also look at "core/includes/drupal.inc" to see the replacement functions. 
+
 ### Reporting Any Issues You See In Core/Adding To Docs
 
 As I'm going through the Backdrop docs and trying some things out on my local site, I've seen some issues and wanted to chime in on PHP version support. Backdrop has a separate repo for issues apart from the codebase: https://github.com/backdrop/backdrop-issues. 
