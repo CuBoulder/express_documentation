@@ -65,6 +65,10 @@ After the Lando install, your `settings.php` file should have those `$config_dir
 
 You can follow https://api.backdropcms.org/converting-modules-from-drupal to start converting a module. No surprises here. There are also example blog posts to look at: https://www.lullabot.com/articles/porting-drupal-7-modules-to-backdrop. If you want to start a blog post about your journey, go ahead. The blog needs fresh content.
 
+### Readme.md and LICENSE.txt
+
+There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example. 
+
 ### Adding The Module To GitHub
 
 Once you have a start on a module, you can add it to the CU Boulder organization on GitHub. Create a repo with "backdrop-" and then the name of the Drupal 7 module. Also, remember to add the organization user to the repo or other people can't edit things.
