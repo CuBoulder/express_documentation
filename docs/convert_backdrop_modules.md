@@ -69,6 +69,16 @@ You can follow https://api.backdropcms.org/converting-modules-from-drupal to sta
 
 There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example.
 
+### Similar Modules
+
+As part of the "Communicate" section of porting a module, the issue in the Backdrop contrib project and the issue on the Drupal project page should serve as notices people can chime in on and say "why don't you just use this Backdrop module that does the same thing?"
+
+Looking for similar modules and adding a link to them in the readme would be a nice thing to do to help users evaluating the Backdrop modules.
+
+### Categorization
+
+I had an issue open about writing some posts on module categorization. Just like having a bunch of local dev solutions to sort through, 
+
 ### PHP Versions
 
 Backdrop supports PHP 5.3 as part of its mission to have low cost of ownership and also for D6 -> Backdrop migrations. It is nice to switch to PHP 5.3 to see if everything works as you are developing. You can use PHP 7 while you are developing, but at points, you should switch back to PHP 5.3 and click around. Eventually, there will be some sort of testing template I will create for CIs to run tests in different versions of PHP.
