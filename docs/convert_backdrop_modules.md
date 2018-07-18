@@ -73,7 +73,7 @@ A lot of modules will have SimpleTests written for them. You can run those via t
 
 Backdrop has a Drupal compatibilty layer in the 1.x branch that will be removed by 2.x. That is why it is important to remove that layer as you convert a module. In PHPStorm, I can see which functions are deprecated. I think this is a default PHPStorm feature, but it puts a line through all deprecated functions.
 
-...image from PHPStorm...
+<img width="360" alt="screen shot 2018-07-18 at 10 23 37 am" src="https://user-images.githubusercontent.com/3640707/42888115-8616d0a8-8a75-11e8-8520-7599897c32fd.png">
 
 If you don't have an IDE that can do this, usually you can search for "Drupal" in your module's codebase. You can also look at "core/includes/drupal.inc" to see the replacement functions. 
 
