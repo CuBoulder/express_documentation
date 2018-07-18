@@ -69,10 +69,6 @@ You can follow https://api.backdropcms.org/converting-modules-from-drupal to sta
 
 There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example. 
 
-### Adding The Module To GitHub
-
-Once you have a start on a module, you can add it to the CU Boulder organization on GitHub. Create a repo with "backdrop-" and then the name of the Drupal 7 module. Also, remember to add the organization user to the repo or other people can't edit things.
-
 ### Running The Tests
 
 A lot of modules will have SimpleTests written for them. You can run those via the Backdrop admin UI on "admin/config/development/testing" once you turn on the Testing module. Running the tests can identify problems in the code base.
@@ -90,6 +86,10 @@ If you don't have an IDE that can do this, usually you can search for "Drupal" i
 As I'm going through the Backdrop docs and trying some things out on my local site, I've seen some issues and wanted to chime in on PHP version support. Backdrop has a separate repo for issues apart from the codebase: https://github.com/backdrop/backdrop-issues. 
 
 You also might see something that would be a good addition or change to a doc. I saw mention of using Lando locally and then an issue about adding that to Backdrop core. The solution was to add a page on the main site, https://backdropcms.org/try-backdrop, but I think users might not get to that page since "Download Backdrop" just starts a download. My suggestion would be to have the "Download Backdrop" link go to https://backdropcms.org/try-backdrop. They have a repo for their main site at https://github.com/backdrop-ops/backdropcms.org/issues that I will file an issue in.
+
+### Adding The Module To GitHub
+
+Once you have a start on a module, you can add it to the CU Boulder organization on GitHub. Create a repo with "backdrop-" and then the name of the Drupal 7 module. Also, remember to add the organization user to the repo or other people can't edit things.
 
 ## Merging Into The Pantheon Master Branch
 
