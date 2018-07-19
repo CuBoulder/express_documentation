@@ -65,15 +65,19 @@ After the Lando install, your `settings.php` file should have those `$config_dir
 
 You can follow https://api.backdropcms.org/converting-modules-from-drupal to start converting a module. No surprises here. There are also example blog posts to look at: https://www.lullabot.com/articles/porting-drupal-7-modules-to-backdrop. If you want to start a blog post about your journey, go ahead. The blog needs fresh content.
 
-### Readme.md and LICENSE.txt
-
-There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example.
-
 ### Similar Modules
 
 As part of the "Communicate" section of porting a module, the issue in the Backdrop contrib project and the issue on the Drupal project page should serve as notices people can chime in on and say "why don't you just use this Backdrop module that does the same thing?"
 
 Looking for similar modules and adding a link to them in the readme would be a nice thing to do to help users evaluating the Backdrop modules.
+
+### Automatic Coder Upgrade Module
+
+The Coder Upgrade module, https://github.com/backdrop-contrib/coder_upgrade, allows you to start out with some tedious find and replace work done for you automatically.
+
+### Readme.md and LICENSE.txt
+
+There is a specific format modules ported to Backdrop take to preserve credit to original maintainers on d.o. https://github.com/backdrop-contrib/demo/blob/1.x-1.x/README.md is an example.
 
 ### Categorization
 
