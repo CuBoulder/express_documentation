@@ -24,7 +24,7 @@ As you are delpying, you can watch Atlas progress in two places, both are recomm
     * `where={"status":"installed","update_group":1}`
     * `where={"status":"installed","update_group":2}`
     * `where={"status":"launched","update_group":13}`
-1. Deployt the code item to PROD and make it `current`.
+1. Deploy the code item to PROD and make it `current`.
 1. Delete all `available` sites on PROD so that they can be recreated with the new profile.
 1. Update the sites on PROD in batches defined by `status` and `update_group`
     * `where={"status":"installed","update_group":0}`
