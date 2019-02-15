@@ -37,3 +37,5 @@ As you are delpying, you can watch Atlas progress in two places, both are recomm
     * `where={"status":"launched","update_group":4}`
     * `where={"status":"launched","update_group":5}`
     * `where={"status":"launched","update_group":6}`
+    
+ When the update groups on TEST or PROD exceed 100 sites, you may need to run a query like `where={"code.profile":{"$ne":"5c65addf0b506826bf2653d9"}}` where 5c65addf0b506826bf2653d9 is the code asset id of the profile you are updating to.
