@@ -292,6 +292,8 @@ Originally, the Selenium server was setup on Travis CI; however, due to versions
 
 There are already instructions on running tests locally that explain how the Express site connects to Sauce Labs durning a test run, https://github.com/CuBoulder/express/tree/dev/tests/behat. Travis CI has an easy way of starting up the "Sauce Connect Proxy" binary, and setup there will be different than manually starting the proxy locally.
 
+The Sauce Labs account is shared via LastPass under "osr_service_account" and is an Open Sauce account. If there are ever issues with the account, consult https://saucelabs.com/open-source/open-sauce. 
+
 # Guidelines When Writing Tests
 
 - **Try to use visible text instead of HTML for targeting.** There are some things in the Drupal UI and the Express frontend that can be hard to target via a label or human-readable text but your scenarios should aim to target text rather than CSS selectors. Someone reading the test has a hard time knowing what the CSS means but an easier time finding the text on the page.
